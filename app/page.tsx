@@ -23,6 +23,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import Hero from "@/components/hero"
 
 export default function PathologyWebsite() {
   return (
@@ -71,74 +72,9 @@ export default function PathologyWebsite() {
       </header>
 
       {/* Hero Section */}
-      <section id="inicio" className="pt-24 pb-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">
-                  Laboratorio de Referencia en México
-                </Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold text-slate-800 leading-tight">
-                  Patología de
-                  <span className="text-blue-600 block">Precisión</span>
-                </h1>
-                <p className="text-xl text-slate-600 leading-relaxed">
-                  Laboratorio especializado en oncología que integra Patología y Biología Molecular para ofrecer
-                  estudios específicos que definen diagnóstico, tratamiento y monitoreo de pacientes con terapias de
-                  precisión. Equipamiento comparable a los mejores laboratorios de investigación clínica del país.
-                </p>
-              </div>
+    <Hero/>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Contactar Ahora
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-blue-200 text-blue-700 hover:bg-blue-50 bg-transparent"
-                  asChild
-                >
-                  <Link href="/servicios">
-                    <BookOpen className="w-5 h-5 mr-2" />
-                    Conocer Servicios
-                  </Link>
-                </Button>
-              </div>
-
-              <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">250+</div>
-                  <div className="text-sm text-slate-600">Marcadores IHQ</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">23</div>
-                  <div className="text-sm text-slate-600">Hospitales Aliados</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">24+</div>
-                  <div className="text-sm text-slate-600">Años de Experiencia</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="relative z-10">
-                <Image
-                  src="/placeholder.svg?height=600&width=500"
-                  alt="Laboratorio de Patología PIC"
-                  width={500}
-                  height={600}
-                  className="rounded-2xl shadow-2xl"
-                />
-              </div>
-              <div className="absolute -top-4 -right-4 w-full h-full bg-gradient-to-br from-blue-200 to-blue-300 rounded-2xl -z-10"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* About Section */}
       <section id="sobre-mi" className="py-16 px-4 bg-white">
