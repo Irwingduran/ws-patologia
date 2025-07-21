@@ -21,7 +21,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed">
-            Revolucionamos la medicina de precisión con IA, análisis molecular avanzado y la experiencia de los mejores
+            Revolucionamos la medicina de precisión, análisis molecular avanzado y la experiencia de los mejores
             patólogos oncólogos de México.
           </p>
         </div>
