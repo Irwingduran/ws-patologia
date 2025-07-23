@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 import {
   Phone,
   Mail,
@@ -11,66 +10,23 @@ import {
   Microscope,
   Users,
   Award,
-  BookOpen,
   Stethoscope,
   FlaskConical,
   GraduationCap,
   Building2,
-  Menu,
   CheckCircle,
   Target,
-  Calendar,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import Hero from "@/components/hero"
+import Footer from "@/components/footer"
+import Navbar from "@/components/navbar"
 
 export default function PathologyWebsite() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
       {/* Header */}
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <Microscope className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-slate-800">Patología</h1>
-                <p className="text-sm text-blue-600 font-medium">Denisse A. Picazo</p>
-              </div>
-            </div>
-
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#inicio" className="text-slate-700 hover:text-blue-600 font-medium transition-colors">
-                Inicio
-              </Link>
-              <Link href="#sobre-mi" className="text-slate-700 hover:text-blue-600 font-medium transition-colors">
-                Sobre Mí
-              </Link>
-              <Link href="/servicios" className="text-slate-700 hover:text-blue-600 font-medium transition-colors">
-                Servicios
-              </Link>
-              <Link href="#articulos" className="text-slate-700 hover:text-blue-600 font-medium transition-colors">
-                Artículos
-              </Link>
-              <Link href="#contacto" className="text-slate-700 hover:text-blue-600 font-medium transition-colors">
-                Contacto
-              </Link>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white ml-4">
-                <Calendar className="w-4 h-4 mr-2" />
-                Agendar Cita
-              </Button>
-            </nav>
-
-            <Button className="md:hidden" variant="ghost" size="sm">
-              <Menu className="w-5 h-5" />
-            </Button>
-          </div>
-        </div>
-      </header>
-
+      <Navbar/>
       {/* Hero Section */}
     <Hero/>
 
@@ -415,23 +371,23 @@ export default function PathologyWebsite() {
                 validación internacional.
               </p>
               <div className="grid md:grid-cols-5 gap-4 text-center">
-                <div>
+                <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                   <div className="text-2xl font-bold">2000</div>
                   <div className="text-sm text-blue-200">Fundación por Dra. Zárate</div>
                 </div>
-                <div>
+                <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                   <div className="text-2xl font-bold">IHQ</div>
                   <div className="text-sm text-blue-200">Inmunohistoquímica</div>
                 </div>
-                <div>
+                <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                   <div className="text-2xl font-bold">RT-PCR</div>
                   <div className="text-sm text-blue-200">Biología Molecular</div>
                 </div>
-                <div>
+                <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                   <div className="text-2xl font-bold">FISH</div>
                   <div className="text-sm text-blue-200">Hibridación</div>
                 </div>
-                <div>
+                <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                   <div className="text-2xl font-bold">NGS</div>
                   <div className="text-sm text-blue-200">Secuenciación</div>
                 </div>
@@ -630,7 +586,7 @@ export default function PathologyWebsite() {
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h3 className="font-semibold text-lg mb-2">Correo Electrónico</h3>
                     <p className="text-blue-100">info@picpatologia.com</p>
                     <p className="text-blue-100 text-sm mt-1">Para educación: educacion@picpatologia.com</p>
@@ -641,7 +597,7 @@ export default function PathologyWebsite() {
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h3 className="font-semibold text-lg mb-2">Teléfonos</h3>
                     <div className="space-y-1 text-blue-100">
                       <p>55 5254 3827</p>
@@ -656,7 +612,7 @@ export default function PathologyWebsite() {
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MessageCircle className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h3 className="font-semibold text-lg mb-2">WhatsApp</h3>
                     <p className="text-blue-100">56 1985 2072</p>
                   </div>
@@ -666,7 +622,7 @@ export default function PathologyWebsite() {
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h3 className="font-semibold text-lg mb-2">Horarios</h3>
                     <div className="text-blue-100 space-y-1">
                       <p>Lunes a Viernes: 7:30 AM - 8:30 PM</p>
@@ -679,7 +635,7 @@ export default function PathologyWebsite() {
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h3 className="font-semibold text-lg mb-2">Dirección</h3>
                     <p className="text-blue-100">
                       Tennyson 360, Colonia Polanco
@@ -697,7 +653,7 @@ export default function PathologyWebsite() {
               <h3 className="text-2xl font-bold mb-6">Envíanos un Mensaje</h3>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <label className="block text-sm font-medium mb-2">Nombre</label>
                     <input
                       type="text"
@@ -705,7 +661,7 @@ export default function PathologyWebsite() {
                       placeholder="Tu nombre"
                     />
                   </div>
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <label className="block text-sm font-medium mb-2">Teléfono</label>
                     <input
                       type="tel"
@@ -714,7 +670,7 @@ export default function PathologyWebsite() {
                     />
                   </div>
                 </div>
-                <div>
+                <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                   <label className="block text-sm font-medium mb-2">Email</label>
                   <input
                     type="email"
@@ -722,7 +678,7 @@ export default function PathologyWebsite() {
                     placeholder="tu@email.com"
                   />
                 </div>
-                <div>
+                <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                   <label className="block text-sm font-medium mb-2">Mensaje</label>
                   <textarea
                     rows={4}
@@ -739,91 +695,9 @@ export default function PathologyWebsite() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                  <Microscope className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Patología</h3>
-                  <p className="text-blue-400 font-medium">Denisse A. Picazo</p>
-                </div>
-              </div>
-              <p className="text-slate-400 mb-4">
-                Laboratorio de referencia en México especializado en patología y biología molecular, comprometidos con
-                la excelencia diagnóstica desde el año 2000.
-              </p>
-              <div className="flex space-x-4">
-                <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
-                  <Phone className="w-4 h-4" />
-                </Button>
-                <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
-                  <Mail className="w-4 h-4" />
-                </Button>
-                <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
-                  <MessageCircle className="w-4 h-4" />
-                </Button>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Servicios</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Inmunohistoquímica
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Patología Quirúrgica
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Biología Molecular
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Hematopatología
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Contacto Rápido</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>55 5254 3827</li>
-                <li>info@picpatologia.com</li>
-                <li>WhatsApp: 56 1985 2072</li>
-                <li>Polanco, CDMX</li>
-              </ul>
-            </div>
-          </div>
-
-          <Separator className="my-8 bg-slate-700" />
-
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-slate-400 text-sm">
-              © {new Date().getFullYear()} Patología - Denisse A. Picazo. Todos los derechos reservados.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#" className="text-slate-400 hover:text-white text-sm transition-colors">
-                Privacidad
-              </Link>
-              <Link href="#" className="text-slate-400 hover:text-white text-sm transition-colors">
-                Términos
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <section>
+        <Footer />
+      </section>
     </div>
   )
 }

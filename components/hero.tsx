@@ -4,66 +4,66 @@ import { Calendar, Award, ArrowRight, CheckCircle } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section id="inicio" className="pt-24 pb-16 px-4 relative bg-white">
-      <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-600/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6 border border-blue-600/20">
+    <section id="inicio" className="pt-24 pb-16 px-4 relative bg-white" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+      <div className="container mx-auto max-w-6xl relative z-10" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+        <div className="text-center mb-16" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+          <div className="inline-flex items-center gap-2 bg-blue-600/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6 border border-blue-600/20" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
             <Award className="w-4 h-4 text-yellow-600" />
-            <span className="text-blue-800 font-medium">Líderes en Patología Molecular</span>
+            <span className="text-blue-800 font-medium" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>Líderes en Patología Molecular</span>
           </div>
 
-          <h1 className="text-4xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
             El Futuro del
-            <span className="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent block">
+            <span className="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent block" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
               Diagnóstico
             </span>
-            <span className="text-blue-600">Está Aquí</span>
+            <span className="text-blue-600" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>Está Aquí</span>
           </h1>
 
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
             Revolucionamos la medicina de precisión, análisis molecular avanzado y la experiencia de los mejores
             patólogos oncólogos de México.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-4 gap-6 mb-16">
-          <Card className="bg-blue-50 border-blue-200 hover:bg-blue-100 transition-all duration-300">
-            <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold">1</span>
+        <div className="grid lg:grid-cols-4 gap-6 mb-16" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+          <Card className="bg-blue-50 border-blue-200 hover:bg-blue-100 transition-all duration-300" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+            <CardContent className="p-6 text-center" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+              <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
+                <span className="text-white font-bold" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>1</span>
               </div>
-              <h3 className="text-gray-900 font-bold mb-2">Recepción</h3>
-              <p className="text-gray-600 text-sm">Muestras procesadas con protocolos internacionales</p>
+              <h3 className="text-gray-900 font-bold mb-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>Recepción</h3>
+              <p className="text-gray-600 text-sm" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Muestras procesadas con protocolos internacionales</p>
             </CardContent>
           </Card>
 
-          <Card className="bg-green-50 border-green-200 hover:bg-green-100 transition-all duration-300">
-            <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold">2</span>
+          <Card className="bg-green-50 border-green-200 hover:bg-green-100 transition-all duration-300" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+            <CardContent className="p-6 text-center" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+              <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-4" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
+                <span className="text-white font-bold" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>2</span>
               </div>
-              <h3 className="text-gray-900 font-bold mb-2">Análisis</h3>
-              <p className="text-gray-600 text-sm">Tecnología NGS y marcadores moleculares</p>
+              <h3 className="text-gray-900 font-bold mb-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>Análisis</h3>
+              <p className="text-gray-600 text-sm" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Tecnología NGS y marcadores moleculares</p>
             </CardContent>
           </Card>
 
-          <Card className="bg-purple-50 border-purple-200 hover:bg-purple-100 transition-all duration-300">
-            <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold">3</span>
+          <Card className="bg-purple-50 border-purple-200 hover:bg-purple-100 transition-all duration-300" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+            <CardContent className="p-6 text-center" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+              <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
+                <span className="text-white font-bold" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>3</span>
               </div>
-              <h3 className="text-gray-900 font-bold mb-2">Interpretación</h3>
-              <p className="text-gray-600 text-sm">Expertos patólogos oncólogos certificados</p>
+              <h3 className="text-gray-900 font-bold mb-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>Interpretación</h3>
+              <p className="text-gray-600 text-sm" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Expertos patólogos oncólogos certificados</p>
             </CardContent>
           </Card>
 
-          <Card className="bg-orange-50 border-orange-200 hover:bg-orange-100 transition-all duration-300">
-            <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold">4</span>
+          <Card className="bg-orange-50 border-orange-200 hover:bg-orange-100 transition-all duration-300" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+            <CardContent className="p-6 text-center" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+              <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
+                <span className="text-white font-bold" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>4</span>
               </div>
-              <h3 className="text-gray-900 font-bold mb-2">Resultados</h3>
-              <p className="text-gray-600 text-sm">Reportes detallados en 24-48 horas</p>
+              <h3 className="text-gray-900 font-bold mb-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>Resultados</h3>
+              <p className="text-gray-600 text-sm" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Reportes detallados en 24-48 horas</p>
             </CardContent>
           </Card>
         </div>
@@ -107,21 +107,21 @@ export default function Hero() {
             </div>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">24+</div>
-                <div className="text-blue-800">Años de Experiencia</div>
+              <div className="relative z-10" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+                <div className="text-4xl font-bold text-blue-600 mb-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>24+</div>
+                <div className="text-blue-800" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Años de Experiencia</div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
-                <div className="text-blue-800">Precisión Diagnóstica</div>
+              <div className="relative z-10" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+                <div className="text-4xl font-bold text-blue-600 mb-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>98%</div>
+                <div className="text-blue-800" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Precisión Diagnóstica</div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">10K+</div>
-                <div className="text-blue-800">Casos Procesados</div>
+              <div className="relative z-10" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+                <div className="text-4xl font-bold text-blue-600 mb-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>10K+</div>
+                <div className="text-blue-800" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Casos Procesados</div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">24h</div>
-                <div className="text-blue-800">Tiempo Promedio</div>
+              <div className="relative z-10" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+                <div className="text-4xl font-bold text-blue-600 mb-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>24h</div>
+                <div className="text-blue-800" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Tiempo Promedio</div>
               </div>
             </div>
           </div>

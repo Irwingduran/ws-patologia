@@ -3,53 +3,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import {
   Phone,
-  ArrowLeft,
-  Microscope,
   CheckCircle,
   Clock,
   Award,
-  Calendar,
   MessageCircle,
   FlaskConical,
 } from "lucide-react"
-import Link from "next/link"
 import Image from "next/image"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
 
 export default function InmunohistoquimicaPage() {
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Header */}
-      <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <Microscope className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-slate-800">Patología</h1>
-                <p className="text-sm text-blue-600 font-medium">Denisse A. Picazo</p>
-              </div>
-            </Link>
-
-            <div className="flex items-center gap-4">
-              <Button variant="outline" asChild>
-                <Link href="/servicios">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Volver a Servicios
-                </Link>
-              </Button>
-              <Button className="bg-blue-600 hover:bg-blue-700">
-                <Calendar className="w-4 h-4 mr-2" />
-                Agendar Cita
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 pt-24">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -388,56 +358,8 @@ export default function InmunohistoquimicaPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <Link href="/" className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                  <Microscope className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Patología</h3>
-                  <p className="text-blue-400 font-medium">Denisse A. Picazo</p>
-                </div>
-              </Link>
-              <p className="text-slate-400 mb-4">
-                Laboratorio de referencia en México especializado en patología y biología molecular.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Otros Servicios</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>
-                  <Link href="/servicios/patologia-quirurgica" className="hover:text-white transition-colors">
-                    Patología Quirúrgica
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/servicios/biologia-molecular" className="hover:text-white transition-colors">
-                    Biología Molecular
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/servicios/hematopatologia" className="hover:text-white transition-colors">
-                    Hematopatología
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Contacto</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>55 5254 3827</li>
-                <li>info@picpatologia.com</li>
-                <li>Polanco, CDMX</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
+    </>
   )
 }

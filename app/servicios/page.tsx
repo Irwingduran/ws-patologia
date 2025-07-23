@@ -5,7 +5,6 @@ import { Separator } from "@/components/ui/separator"
 import {
   Phone,
   Mail,
-  ArrowLeft,
   Microscope,
   Users,
   Clock,
@@ -20,44 +19,18 @@ import {
   MessageCircle,
   Award,
 } from "lucide-react"
-import Link from "next/link"
 import Image from "next/image"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
 
 export default function ServiciosPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
       {/* Header */}
-      <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <Microscope className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-slate-800">Patología</h1>
-                <p className="text-sm text-blue-600 font-medium">Denisse A. Picazo</p>
-              </div>
-            </Link>
-
-            <div className="flex items-center gap-4">
-              <Button variant="outline" asChild>
-                <Link href="/">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Volver al Inicio
-                </Link>
-              </Button>
-              <Button className="bg-blue-600 hover:bg-blue-700">
-                <Phone className="w-4 h-4 mr-2" />
-                Contactar
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+     <Navbar/>
 
       {/* Hero Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Servicios Especializados</Badge>
@@ -196,21 +169,21 @@ export default function ServiciosPage() {
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h4 className="font-semibold text-slate-800">Más de 250 Anticuerpos Disponibles</h4>
                     <p className="text-slate-600">Amplio panel de marcadores para diagnósticos precisos</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h4 className="font-semibold text-slate-800">Estándares de Calidad Internacional</h4>
                     <p className="text-slate-600">Protocolos validados y buenas prácticas de laboratorio</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h4 className="font-semibold text-slate-800">Resultados Rápidos y Confiables</h4>
                     <p className="text-slate-600">Tiempos de respuesta optimizados sin comprometer la calidad</p>
                   </div>
@@ -586,15 +559,15 @@ export default function ServiciosPage() {
           </div>
 
           <div className="mt-12 grid md:grid-cols-3 gap-6 text-center">
-            <div>
+            <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
               <div className="text-2xl font-bold mb-2">Lun - Vie</div>
               <div className="text-blue-100">7:30 AM - 8:30 PM</div>
             </div>
-            <div>
+            <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
               <div className="text-2xl font-bold mb-2">Sábados</div>
               <div className="text-blue-100">9:00 AM - 1:00 PM</div>
             </div>
-            <div>
+            <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
               <div className="text-2xl font-bold mb-2">Emergencias</div>
               <div className="text-blue-100">24/7 Disponible</div>
             </div>
@@ -603,63 +576,7 @@ export default function ServiciosPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <Link href="/" className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                  <Microscope className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Patología</h3>
-                  <p className="text-blue-400 font-medium">Denisse A. Picazo</p>
-                </div>
-              </Link>
-              <p className="text-slate-400 mb-4">
-                Laboratorio de referencia en México especializado en patología y biología molecular, comprometidos con
-                la excelencia diagnóstica desde el año 2000.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Servicios Principales</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>Inmunohistoquímica</li>
-                <li>Patología Quirúrgica</li>
-                <li>Biología Molecular</li>
-                <li>Hematopatología</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Contacto</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>55 5254 3827</li>
-                <li>info@picpatologia.com</li>
-                <li>WhatsApp: 56 1985 2072</li>
-                <li>Polanco, CDMX</li>
-              </ul>
-            </div>
-          </div>
-
-          <Separator className="my-8 bg-slate-700" />
-
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-slate-400 text-sm">
-              © {new Date().getFullYear()} Patología - Denisse A. Picazo. Todos los derechos reservados.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/" className="text-slate-400 hover:text-white text-sm transition-colors">
-                Inicio
-              </Link>
-              <Link href="/#contacto" className="text-slate-400 hover:text-white text-sm transition-colors">
-                Contacto
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+     <Footer/>
     </div>
   )
 }

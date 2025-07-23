@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dogma Bold', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro Bold', Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 @layer utilities {

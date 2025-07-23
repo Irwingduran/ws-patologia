@@ -2,9 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Patología Denisse A. Picazo',
+  description: 'Laboratorio especializado en el área de oncología, donde integramos la Patología y la Biología Molecular para ofrecer una gran gama de estudios específicos que proporcionen la información necesaria para definir el diagnóstico, tratamiento y monitoreo de pacientes, a fin de definir terapias de precisión.'
 }
 
 export default function RootLayout({
@@ -13,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>{children}</body>
     </html>
   )
