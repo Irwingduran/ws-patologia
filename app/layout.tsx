@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import SocialMediaButtons from '@/components/social-media-buttons'
 
 export const metadata: Metadata = {
   title: 'Patología Denisse A. Picazo',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        {children}
+        <SocialMediaButtons />
+      </body>
     </html>
   )
 }

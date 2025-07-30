@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import {
   Phone,
@@ -9,7 +9,7 @@ import {
   MessageCircle,
   Microscope,
   Users,
-  Award,
+  ArrowRight,
   Stethoscope,
   FlaskConical,
   GraduationCap,
@@ -33,127 +33,152 @@ export default function PathologyWebsite() {
       
 
       {/* About Section */}
-      <section id="sobre-mi" className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">¿Quiénes Somos?</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Laboratorio PIC</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Especialistas en oncología integrando Patología y Biología Molecular desde el año 2000
+ {/* Services Section */}
+<section id="servicios" className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+  <div className="container mx-auto max-w-6xl">
+    <div className="text-center mb-12">
+      <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Nuestros Servicios</Badge>
+      <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Servicios Especializados</h2>
+      <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+        Ofrecemos una amplia gama de servicios de patología y biología molecular
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <Link href="/servicios/inmunohistoquimica" className="cursor-pointer">
+        <Card className="hover:shadow-lg transition-shadow border-blue-100">
+          <CardHeader>
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <Microscope className="w-6 h-6 text-blue-600" />
+            </div>
+            <CardTitle className="text-blue-800">Inmunohistoquímica</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-slate-600 mb-4">
+              Técnica esencial para detectar antígenos específicos en tejidos mediante anticuerpos, permitiendo
+              diagnósticos precisos y decisiones terapéuticas.
             </p>
-          </div>
+            <Badge variant="secondary">250+ Anticuerpos</Badge>
+          </CardContent>
+          <CardFooter>
+            <Button variant="link" className="text-blue-600 p-0">
+              Ver más <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </CardFooter>
+        </Card>
+      </Link>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6">
-              <Card className="border-blue-100">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-blue-800">
-                    <Users className="w-6 h-6" />
-                    Nuestra Especialización
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600 leading-relaxed">
-                    Somos un laboratorio especializado en el área de <strong>oncología</strong>, donde integramos la
-                    Patología y la Biología Molecular para ofrecer una gran gama de estudios específicos que
-                    proporcionen la información necesaria para definir el diagnóstico, tratamiento y monitoreo de
-                    pacientes, a fin de definir <strong>terapias de precisión</strong>.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-blue-100">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-blue-800">
-                    <Award className="w-6 h-6" />
-                    Proceso de Calidad Integral
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600 leading-relaxed mb-4">
-                    Una vez recibida la muestra, se efectúa su revisión por un patólogo especialista para establecer si
-                    es adecuada para cada estudio solicitado, evaluando:
-                  </p>
-                  <ul className="space-y-2 text-slate-600">
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                      Tipo de tejido según guías específicas
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                      Celularidad y preservación adecuadas
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                      Región de corte idónea para el estudio
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+      <Link href="/servicios/patologia-quirurgica" className="cursor-pointer">
+        <Card className="hover:shadow-lg transition-shadow border-blue-100">
+          <CardHeader>
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <Stethoscope className="w-6 h-6 text-blue-600" />
             </div>
+            <CardTitle className="text-blue-800">Patología Quirúrgica</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-slate-600 mb-4">
+              Estudiamos tejidos obtenidos durante cirugía para diagnosticar enfermedades y determinar planes de
+              tratamiento. Incluye estudios transoperatorios.
+            </p>
+            <Badge variant="secondary">24h Programación</Badge>
+          </CardContent>
+          <CardFooter>
+            <Button variant="link" className="text-blue-600 p-0">
+              Ver más <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </CardFooter>
+        </Card>
+      </Link>
 
-            <div className="space-y-6">
-              <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-blue-800">
-                    <Building2 className="w-6 h-6" />
-                    Historia y Fundación
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-700 leading-relaxed">
-                    El laboratorio <strong>PATOLOGÍA INMUNOHISTOQUÍMICA Y CITOPATOLOGÍA (PIC)</strong> fue fundado en el
-                    año 2000 por la reconocida experta en Patología Oncológica a nivel nacional,{" "}
-                    <strong>DRA. ALEJANDRA ZÁRATE OSORNO</strong>, con la visión de implementar en México las mejores
-                    técnicas en Patología para el diagnóstico, tratamiento y monitoreo de enfermedades, especialmente en
-                    cáncer.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-blue-100">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-blue-800">
-                    <Award className="w-6 h-6" />
-                    Certificaciones Internacionales
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="p-3 bg-green-50 rounded-lg border border-green-200">
-                      <h4 className="font-semibold text-green-800 mb-1">Programa GCP</h4>
-                      <p className="text-sm text-green-700">
-                        Programa de Garantía de Calidad en Patología, reconocido por programas europeos
-                      </p>
-                    </div>
-                    <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                      <h4 className="font-semibold text-blue-800 mb-1">IQNPath</h4>
-                      <p className="text-sm text-blue-700">
-                        Miembro de pleno derecho de la International Quality Network in Pathology
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-blue-100">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-blue-800">
-                    <Award className="w-6 h-6" />
-                    Nuestro Lema
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-center p-4 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg text-white">
-                    <h3 className="text-xl font-bold">"Excelencia y Precisión"</h3>
-                    <p className="text-blue-100 text-sm mt-2">Nuestro compromiso con la calidad diagnóstica</p>
-                  </div>
-                </CardContent>
-              </Card>
+      <Link href="/servicios/biologia-molecular" className="cursor-pointer">
+        <Card className="hover:shadow-lg transition-shadow border-blue-100">
+          <CardHeader>
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <FlaskConical className="w-6 h-6 text-blue-600" />
             </div>
+            <CardTitle className="text-blue-800">Biología Molecular</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-slate-600 mb-4">
+              Estudios genéticos del ADN y ARN para diagnóstico de enfermedades congénitas, infecciosas y
+              neoplásicas mediante FISH, RT-PCR y NGS.
+            </p>
+            <Badge variant="secondary">Tecnología NGS</Badge>
+          </CardContent>
+          <CardFooter>
+            <Button variant="link" className="text-blue-600 p-0">
+              Ver más <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </CardFooter>
+        </Card>
+      </Link>
+
+      <Card className="hover:shadow-lg transition-shadow border-blue-100">
+        <CardHeader>
+          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <Users className="w-6 h-6 text-blue-600" />
           </div>
-        </div>
-      </section>
+          <CardTitle className="text-blue-800">Interconsulta de Casos</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-slate-600 mb-4">
+            Ponemos a disposición la experiencia de nuestra red médica en distintos campos de la patología para
+            casos complejos.
+          </p>
+          <Badge variant="secondary">Red Internacional</Badge>
+        </CardContent>
+        <CardFooter>
+          <Button variant="link" className="text-blue-600 p-0">
+            Ver más <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </CardFooter>
+      </Card>
+
+      <Card className="hover:shadow-lg transition-shadow border-blue-100">
+        <CardHeader>
+          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <Clock className="w-6 h-6 text-blue-600" />
+          </div>
+          <CardTitle className="text-blue-800">Estudios Transoperatorios</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-slate-600 mb-4">
+            Apoyo durante procedimientos quirúrgicos con consultas en tiempo real. Servicio programado con 24
+            horas de anticipación.
+          </p>
+          <Badge variant="secondary">Tiempo Real</Badge>
+        </CardContent>
+        <CardFooter>
+          <Button variant="link" className="text-blue-600 p-0">
+            Ver más <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </CardFooter>
+      </Card>
+
+      <Card className="hover:shadow-lg transition-shadow border-blue-100">
+        <CardHeader>
+          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <GraduationCap className="w-6 h-6 text-blue-600" />
+          </div>
+          <CardTitle className="text-blue-800">Educación</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-slate-600 mb-4">
+            Programas de Alta Especialidad en Hematopatología e Inmunohistoquímica, y rotaciones para Médicos
+            Residentes.
+          </p>
+          <Badge variant="secondary">educacion@picpatologia.com</Badge>
+        </CardContent>
+        <CardFooter>
+          <Button variant="link" className="text-blue-600 p-0">
+            Ver más <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </CardFooter>
+      </Card>
+    </div>
+  </div>
+</section>
 
       {/* Quality Process Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-green-50 to-blue-50">
@@ -589,7 +614,7 @@ export default function PathologyWebsite() {
                   <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <h3 className="font-semibold text-lg mb-2">Correo Electrónico</h3>
                     <p className="text-blue-100">info@picpatologia.com</p>
-                    <p className="text-blue-100 text-sm mt-1">Para educación: educacion@picpatologia.com</p>
+                  
                   </div>
                 </div>
 
