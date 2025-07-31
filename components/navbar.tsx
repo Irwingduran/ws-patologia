@@ -40,10 +40,13 @@ const Navbar = () => {
               <Link href="/#contacto" className="text-slate-700 hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                 Contacto
               </Link>
-              <Button onClick{() => window.open("https://wa.me/5619852072")} className="bg-blue-600 hover:bg-blue-700 text-white ml-4">
-                <Calendar className="w-4 h-4 mr-2" />
-                Agendar Cita
-              </Button>
+            <Button 
+           onClick={() => window.open("https://wa.me/5619852072", "_blank", "noopener,noreferrer")}
+           className="bg-blue-600 hover:bg-blue-700 text-white ml-4 transition-colors duration-200"
+           >
+          <Calendar className="w-4 h-4 mr-2" />
+          Agendar Cita
+          </Button>
             </nav>
 
             <Button className="md:hidden" variant="ghost" size="sm">
