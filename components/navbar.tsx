@@ -23,7 +23,35 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
-            {/* ... resto del código del Navbar ... */}
+            <div className="w-30 h-30 rounded-lg flex items-center justify-center">
+              <Image 
+                src="/logo/logo.png" 
+                alt="Logo PIC Patología" 
+                width={50} 
+                height={50} 
+                priority
+              />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-slate-800 font-['Dogma_Bold']">
+                PIC Patología
+              </h1>
+              <p className="text-sm text-blue-600 font-medium">
+                Denisse A. Picazo
+              </p>
+            </div>
+          </Link>
+
+          <nav className="hidden md:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-slate-700 hover:text-blue-600 font-medium transition-colors"
+              >
+                {link.text}
+              </Link>
+            ))}
             
             <Button 
               onClick={handleWhatsAppClick}
@@ -34,6 +62,15 @@ const Navbar = () => {
               Agendar Cita
             </Button>
           </nav>
+
+          <Button 
+            className="md:hidden" 
+            variant="ghost" 
+            size="sm"
+            aria-label="Menú móvil"
+          >
+            <Menu className="w-5 h-5" />
+          </Button>
         </div>
       </div>
     </header>
