@@ -1,62 +1,75 @@
-import React from 'react'
-import { Button } from "@/components/ui/button"
-import {
-  Menu,
-  Calendar,
-} from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import React from 'react';
+import { Button } from "@/components/ui/button";
+import { Menu, Calendar } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
+  const navLinks = [
+    { href: "/", text: "Inicio" },
+    { href: "/#sobre-mi", text: "Sobre Mí" },
+    { href: "/servicios", text: "Servicios" },
+    { href: "/#articulos", text: "Artículos" },
+    { href: "/#contacto", text: "Contacto" },
+  ];
+
   return (
-    <div>
-        <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-           <Link href="/">
-            <div className="flex items-center space-x-3">   
-              <div className="w-30 h-30 rounded-lg flex items-center justify-center">
-                <Image src="/logo/logo.png" alt="Logo" width={50} height={50} />
-              </div> 
-              <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                <h1 className="text-xl font-bold text-slate-800" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>PIC Patología</h1>
-                <p className="text-sm text-blue-600 font-medium" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Denisse A. Picazo</p>
-              </div>
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50 font-['Source_Sans_Pro_Bold']">
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="w-30 h-30 rounded-lg flex items-center justify-center">
+              <Image 
+                src="/logo/logo.png" 
+                alt="Logo PIC Patología" 
+                width={50} 
+                height={50} 
+                priority
+              />
             </div>
-            </Link>
-            <nav className="hidden md:flex items-center space-x-8" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-              <Link href="/" className="text-slate-700 hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                Inicio
+            <div>
+              <h1 className="text-xl font-bold text-slate-800 font-['Dogma_Bold']">
+                PIC Patología
+              </h1>
+              <p className="text-sm text-blue-600 font-medium">
+                Denisse A. Picazo
+              </p>
+            </div>
+          </Link>
+
+          <nav className="hidden md:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-slate-700 hover:text-blue-600 font-medium transition-colors"
+              >
+                {link.text}
               </Link>
-              <Link href="/#sobre-mi" className="text-slate-700 hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                Sobre Mí
-              </Link>
-              <Link href="/servicios" className="text-slate-700 hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                Servicios
-              </Link>
-              <Link href="/#articulos" className="text-slate-700 hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                Artículos
-              </Link>
-              <Link href="/#contacto" className="text-slate-700 hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                Contacto
-              </Link>
+            ))}
+            
             <Button 
-           onClick={() => window.open("https://wa.me/5619852072", "_blank", "noopener,noreferrer")}
-           className="bg-blue-600 hover:bg-blue-700 text-white ml-4 transition-colors duration-200"
-           >
-          <Calendar className="w-4 h-4 mr-2" />
-          Agendar Cita
-          </Button>
-            </nav>
-
-            <Button className="md:hidden" variant="ghost" size="sm">
-              <Menu className="w-5 h-5" />
+              onClick={() => window.open("https://wa.me/5619852072", "_blank", "noopener,noreferrer")}
+              className="bg-blue-600 hover:bg-blue-700 text-white ml-4 transition-colors duration-200"
+              aria-label="Agendar cita por WhatsApp"
+            >
+              <Calendar className="w-4 h-4 mr-2" />
+              Agendar Cita
             </Button>
-          </div>
-        </div>
-      </header>
-    </div>
-  )
-}
+          </nav>
 
-export default Navbar
+          <Button 
+            className="md:hidden" 
+            variant="ghost" 
+            size="sm"
+            aria-label="Menú móvil"
+          >
+            <Menu className="w-5 h-5" />
+          </Button>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
