@@ -20,10 +20,7 @@ const Footer = () => {
                 <div className="w-30 h-30 rounded-lg flex items-center justify-center">
                   <Image src="/logo/logo.png" alt="Logo" width={50} height={50} />
                 </div>
-                <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                  <h3 className="text-xl font-bold">Patología</h3>
-                  <p className="text-blue-400 font-medium">Denisse A. Picazo</p>
-                </div>
+            
               </div>
               </Link>
               <p className="text-slate-400 mb-4">
