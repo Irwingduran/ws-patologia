@@ -69,7 +69,7 @@ export default function PathologyWebsite() {
       </div>
       <div className="relative">
         <div className="rounded-2xl h-80 w-full flex items-center justify-center">
-          <Image src="/img/DSC05022.png" alt="conocenos" width={500} height={500} />
+          <Image src="/img/DSC05137.png" alt="conocenos" width={500} height={500} />
         </div>
         <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg w-64">
           <div className="text-4xl font-bold text-blue-800 mb-2">20+</div>
