@@ -11,6 +11,7 @@ const Navbar = () => {
     { href: "/#conocenos", text: "Conócenos" },
     { href: "#servicios", text: "Servicios" },
     { href: "/#blog", text: "Blog" },
+    { href: "/#contacto", text: "Contacto" },
   ];
 
 
@@ -24,8 +25,8 @@ const Navbar = () => {
               <Image 
                 src="/logo/logo.png" 
                 alt="Logo PIC Patología" 
-                width={64} 
-                height={64} 
+                width={74} 
+                height={74} 
                 priority
                 className="w-full h-auto"
               />
