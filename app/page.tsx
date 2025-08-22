@@ -357,6 +357,45 @@ export default function PathologyWebsite() {
                 </Button>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
+              <CardHeader>
+                <CardTitle className="text-slate-800">Hematopatología Moderna</CardTitle>
+                <CardDescription>Enfoques actuales en el diagnóstico hematológico</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" size="sm">
+                  Leer Más
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
+              <CardHeader>
+                <CardTitle className="text-slate-800">Hematopatología Moderna</CardTitle>
+                <CardDescription>Enfoques actuales en el diagnóstico hematológico</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" size="sm">
+                  Leer Más
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
+              <CardHeader>
+                <CardTitle className="text-slate-800">Hematopatología Moderna</CardTitle>
+                <CardDescription>Enfoques actuales en el diagnóstico hematológico</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" size="sm">
+                  Leer Más
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
