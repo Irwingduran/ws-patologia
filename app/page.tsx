@@ -125,7 +125,7 @@ export default function PathologyWebsite() {
           </CardHeader>
           <CardContent>
             <p className="text-slate-600 mb-4">
-              Estudiamos tejidos obtenidos durante distintos procedimientos quirúrgicos para diagnosticar enfermedades, determinar tratamiento y pronósticos. 
+              Estudiamos tejidos obtenidos durante distintos procedimientos quirúrgicos para diagnosticar enfermedades. 
             </p>
             <Badge variant="secondary"> 48 a 10 días hábiles</Badge>
           </CardContent>
