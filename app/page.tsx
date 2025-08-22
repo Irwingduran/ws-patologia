@@ -17,8 +17,11 @@ import {
   CheckCircle,
   Target,
   FileText,
+  Eye,
+  Heart,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import Hero from "@/components/hero"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
@@ -33,9 +36,52 @@ export default function PathologyWebsite() {
 
       
 
+
       {/* About Section */}
- {/* Services Section */}
-<section id="servicios" className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="conocenos" className="py-16 px-4 bg-white">
+  <div className="container mx-auto max-w-6xl">
+    <div className="text-center mb-12">
+      <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Nuestra Historia</Badge>
+      <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Sobre Nosotros</h2>
+      <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+        Más de dos décadas de excelencia en diagnóstico patológico especializado
+      </p>
+    </div>
+
+    <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <h3 className="text-2xl font-bold text-slate-800 mb-6">Nuestra Historia</h3>
+        <p className="text-slate-600 mb-4">
+          PATOLOGÍA, INMUNOHISTOQUÍMICA Y CITOPATOLOGÍA S.C. (PIC) fue fundada en el año 2000 por la reconocida patóloga 
+          <span className="font-semibold text-blue-700"> Dra. Alejandra Zárate Osorno</span>, quien con su visión y expertise 
+          estableció los más altos estándares de calidad en diagnóstico patológico.
+        </p>
+        <p className="text-slate-600 mb-4">
+          Actualmente, bajo la dirección del 
+          <span className="font-semibold text-blue-700"> Dr. Adrián Alejandro Carballo Zárate</span>, hemos evolucionado 
+          para integrar las técnicas más avanzadas de patología y biología molecular, manteniendo nuestro compromiso 
+          con la excelencia diagnóstica.
+        </p>
+        <p className="text-slate-600">
+          A lo largo de más de 20 años, nos hemos consolidado como un laboratorio de referencia a nivel nacional, 
+          reconocido por la precisión de nuestros diagnósticos y nuestro enfoque innovador en el estudio de enfermedades.
+        </p>
+      </div>
+      <div className="relative">
+        <div className="rounded-2xl h-80 w-full flex items-center justify-center">
+          <Image src="/img/DSC05022.png" alt="conocenos" width={500} height={500} />
+        </div>
+        <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg w-64">
+          <div className="text-4xl font-bold text-blue-800 mb-2">20+</div>
+          <div className="text-slate-600">Años de experiencia</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </section>
+   {/* Services Section */}
+    <section id="servicios" className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
   <div className="container mx-auto max-w-6xl">
     <div className="text-center mb-12">
       <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Nuestros Servicios</Badge>
@@ -178,7 +224,7 @@ export default function PathologyWebsite() {
       </Card>
     </div>
   </div>
-</section>
+   </section>
 
       {/* Quality Process Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-green-50 to-blue-50">
@@ -325,7 +371,6 @@ export default function PathologyWebsite() {
               Estamos aquí para apoyarte con nuestros servicios especializados
             </p>
           </div>
-
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div className="space-y-6">
@@ -339,6 +384,16 @@ export default function PathologyWebsite() {
                   
                   </div>
                 </div>
+                <Link href="https://wa.me/5619852072">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MessageCircle className="w-6 h-6" />
+                  </div>
+                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+                    <h3 className="font-semibold text-lg mb-2">WhatsApp</h3>
+                    <p className="text-blue-100">56 1985 2072</p>
+                  </div>
+                </div></Link>
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -355,15 +410,7 @@ export default function PathologyWebsite() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MessageCircle className="w-6 h-6" />
-                  </div>
-                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                    <h3 className="font-semibold text-lg mb-2">WhatsApp</h3>
-                    <p className="text-blue-100">56 1985 2072</p>
-                  </div>
-                </div>
+                  
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">

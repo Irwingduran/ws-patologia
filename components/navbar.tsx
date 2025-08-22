@@ -8,8 +8,8 @@ import Image from "next/image";
 const Navbar = () => {
   const navLinks = [
     { href: "/", text: "Inicio" },
-    { href: "/#sobre-mi", text: "Sobre Mí" },
-    { href: "/servicios", text: "Servicios" },
+    { href: "/#conocenos", text: "Conócenos" },
+    { href: "#servicios", text: "Servicios" },
     { href: "/#blog", text: "Blog" },
   ];
 
@@ -20,13 +20,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-30 h-30 rounded-lg flex items-center justify-center">
+            <div className="w-16 h-16 rounded-lg flex items-center justify-center">
               <Image 
                 src="/logo/logo.png" 
                 alt="Logo PIC Patología" 
-                width={50} 
-                height={50} 
+                width={64} 
+                height={64} 
                 priority
+                className="w-full h-auto"
               />
             </div>
           </Link>

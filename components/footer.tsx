@@ -71,7 +71,7 @@ const Footer = () => {
               <ul className="space-y-2 text-slate-400">
                 <li>55 5254 3827</li>
                 <li>info@picpatologia.com</li>
-                <li>WhatsApp: 56 1985 2072</li>
+               <Link href="https://wa.me/525619852072"> <li>WhatsApp: 56 1985 2072</li></Link>
                 <li>Polanco, CDMX</li>
               </ul>
             </div>
@@ -81,7 +81,7 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm">
-              © {new Date().getFullYear()} Patología - Denisse A. Picazo. Todos los derechos reservados.
+              © {new Date().getFullYear()} Patología - Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-slate-400 hover:text-white text-sm transition-colors">
@@ -99,3 +99,5 @@ const Footer = () => {
 }
 
 export default Footer
+
+
