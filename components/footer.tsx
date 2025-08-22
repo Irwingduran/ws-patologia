@@ -18,7 +18,7 @@ const Footer = () => {
                 <Link href="/">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-30 h-30 rounded-lg flex items-center justify-center">
-                  <Image src="/logo/logo.png" alt="Logo" width={50} height={50} />
+                  <Image src="/logo/logo.png" alt="Logo" width={80} height={80} />
                 </div>
             
               </div>
@@ -26,9 +26,7 @@ const Footer = () => {
               <p className="text-slate-400 mb-4">
                PATOLOGÍA, INMUNOHISTOQUÍMICA Y CITOPATOLOGÍA S.C.(PIC), somos un laboratorio referente en México, 
                 fundado en el año 2000 por la reconocida patóloga la Dra. Alejandra Zárate Osorno y actualmente dirigido por el 
-                Dr. Adrián Alejandro Carballo Zárate. Nuestro compromiso es integrar la Patología y la Biología Molecular para 
-                ofrecer una amplia variedad de estudios especializados que proporcionan información precisa para definir diagnóstico, 
-                pronóstico, tratamiento y monitoreo de manera personalizada.
+                Dr. Adrián Alejandro Carballo Zárate.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
