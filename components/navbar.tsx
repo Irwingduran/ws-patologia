@@ -25,8 +25,8 @@ const Navbar = () => {
               <Image 
                 src="/logo/logo.png" 
                 alt="Logo PIC Patología" 
-                width={74} 
-                height={74} 
+                width={84} 
+                height={84} 
                 priority
                 className="w-full h-auto"
               />
