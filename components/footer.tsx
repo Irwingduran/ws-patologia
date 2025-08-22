@@ -24,8 +24,11 @@ const Footer = () => {
               </div>
               </Link>
               <p className="text-slate-400 mb-4">
-                Laboratorio de referencia en México especializado en patología y biología molecular, comprometidos con
-                la excelencia diagnóstica desde el año 2000.
+               PATOLOGÍA, INMUNOHISTOQUÍMICA Y CITOPATOLOGÍA S.C.(PIC), somos un laboratorio referente en México, 
+                fundado en el año 2000 por la reconocida patóloga la Dra. Alejandra Zárate Osorno y actualmente dirigido por el 
+                Dr. Adrián Alejandro Carballo Zárate. Nuestro compromiso es integrar la Patología y la Biología Molecular para 
+                ofrecer una amplia variedad de estudios especializados que proporcionan información precisa para definir diagnóstico, 
+                pronóstico, tratamiento y monitoreo de manera personalizada.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
