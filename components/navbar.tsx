@@ -44,7 +44,7 @@ const Navbar = () => {
               </Link>
             ))}
             
-            <Link href="https://wa.me/525619852072">
+            <Link href="https://wa.me/525619852072" target="_blank">
             <Button 
               className="bg-blue-600 hover:bg-blue-700 text-white ml-4 transition-colors duration-200"
               aria-label="Agendar cita por WhatsApp"
