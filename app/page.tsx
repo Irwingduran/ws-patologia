@@ -48,6 +48,23 @@ export default function PathologyWebsite() {
       </p>
     </div>
 
+    {/* Video de Presentación */}
+    <div className="mb-16">
+      <div className="max-w-4xl mx-auto">
+        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+          <iframe
+            src="https://player.vimeo.com/video/1124298307?badge=0&autopause=0&player_id=0&app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            title="Presentación PIC Patología"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+
     <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
       <div>
         <h3 className="text-2xl font-bold text-slate-800 mb-6">Nuestra Historia</h3>
