@@ -1,21 +1,25 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Calendar, Award, ArrowRight, CheckCircle } from "lucide-react"
-import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section id="inicio" className="pt-32 pb-16 px-4 relative min-h-screen flex items-center overflow-hidden">
+    <section id="inicio" className="pt-32 pb-20 px-4 relative min-h-screen flex items-center overflow-hidden">
 
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/img/DSC05022.png"
-          alt="Laboratorio PIC - Fondos de microscopio y equipos de diagnóstico"
-          fill
-          className="object-cover"
-          priority
-        />
-    
+      <div className="absolute inset-0 -top-20 bottom-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover scale-110"
+          style={{ objectFit: 'cover' }}
+        >
+          <source src="/video/video-background.mp4" type="video/mp4" />
+        </video>
+
         <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
       </div>
 

@@ -25,6 +25,8 @@ import Image from "next/image"
 import Hero from "@/components/hero"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
+import DoctorsSection from "@/components/doctors-section"
+import VimeoPlayer from "@/components/vimeo-player"
 
 export default function PathologyWebsite() {
   return (
@@ -38,7 +40,7 @@ export default function PathologyWebsite() {
 
 
       {/* About Section */}
-    <section id="conocenos" className="py-16 px-4 bg-white">
+    <section id="conocenos" className="py-16 px-4 bg-white relative">
   <div className="container mx-auto max-w-6xl">
     <div className="text-center mb-12">
       <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Nuestra Historia</Badge>
@@ -51,17 +53,7 @@ export default function PathologyWebsite() {
     {/* Video de Presentación */}
     <div className="mb-16">
       <div className="max-w-4xl mx-auto">
-        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-          <iframe
-            src="https://player.vimeo.com/video/1124298307?badge=0&autopause=0&player_id=0&app_id=58479"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-            title="Presentación PIC Patología"
-          ></iframe>
-        </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
+        <VimeoPlayer videoId="1124298307" title="Presentación PIC Patología" />
       </div>
     </div>
 
@@ -84,7 +76,7 @@ export default function PathologyWebsite() {
       </div>
       <div className="relative">
         <div className="rounded-2xl h-80 w-full flex items-center justify-center">
-          <Image src="/img/DSC05137.png" alt="conocenos" width={500} height={500} />
+          <Image src="/img/DSC05022.png" alt="conocenos" width={500} height={500} />
         </div>
         <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg w-64">
           <div className="text-4xl font-bold text-blue-800 mb-2">20+</div>
@@ -95,8 +87,12 @@ export default function PathologyWebsite() {
 
   </div>
     </section>
+
+      {/* Doctors Section */}
+      <DoctorsSection />
+
    {/* Services Section */}
-    <section id="servicios" className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="servicios" className="py-16 px-4 bg-white">
   <div className="container mx-auto max-w-6xl">
     <div className="text-center mb-12">
       <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Nuestros Servicios</Badge>
@@ -107,22 +103,22 @@ export default function PathologyWebsite() {
     </div>
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <Link href="/servicios" className="cursor-pointer">
-        <Card className="hover:shadow-lg transition-shadow border-blue-100">
+      <Link href="/servicios" className="cursor-pointer h-full">
+        <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
           <CardHeader>
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
               <Microscope className="w-6 h-6 text-blue-600" />
             </div>
-            <CardTitle className="text-blue-800">Inmunohistoquímica</CardTitle>
+            <CardTitle className="text-blue-800 min-h-[3.5rem]">Inmunohistoquímica</CardTitle>
           </CardHeader>
-          <CardContent>
-            <p className="text-slate-600 mb-4">
+          <CardContent className="flex-grow flex flex-col">
+            <p className="text-slate-600 mb-4 flex-grow">
               Técnica esencial para detectar antígenos específicos en tejidos mediante anticuerpos, permitiendo
               diagnósticos precisos y decisiones terapéuticas.
             </p>
-            <Badge variant="secondary">250+ Anticuerpos</Badge>
+            <Badge variant="secondary" className="w-fit">250+ Anticuerpos</Badge>
           </CardContent>
-          <CardFooter>
+          <CardFooter className="mt-auto">
             <Button variant="link" className="text-blue-600 p-0">
               Ver más <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -130,21 +126,21 @@ export default function PathologyWebsite() {
         </Card>
       </Link>
 
-      <Link href="/servicios" className="cursor-pointer">
-        <Card className="hover:shadow-lg transition-shadow border-blue-100">
+      <Link href="/servicios" className="cursor-pointer h-full">
+        <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
           <CardHeader>
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
               <Stethoscope className="w-6 h-6 text-blue-600" />
             </div>
-            <CardTitle className="text-blue-800">Patología Quirúrgica y Hematopatología.            </CardTitle>
+            <CardTitle className="text-blue-800 min-h-[3.5rem]">Patología Quirúrgica y Hematopatología.</CardTitle>
           </CardHeader>
-          <CardContent>
-            <p className="text-slate-600 mb-4">
+          <CardContent className="flex-grow flex flex-col">
+            <p className="text-slate-600 mb-4 flex-grow">
               Estudiamos tejidos obtenidos durante distintos procedimientos quirúrgicos para diagnosticar enfermedades.
             </p>
-            <Badge variant="secondary"> 48 a 10 días hábiles</Badge>
+            <Badge variant="secondary" className="w-fit">48 a 10 días hábiles</Badge>
           </CardContent>
-          <CardFooter>
+          <CardFooter className="mt-auto">
             <Button variant="link" className="text-blue-600 p-0">
               Ver más <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -152,22 +148,22 @@ export default function PathologyWebsite() {
         </Card>
       </Link>
 
-      <Link href="/servicios" className="cursor-pointer">
-        <Card className="hover:shadow-lg transition-shadow border-blue-100">
+      <Link href="/servicios" className="cursor-pointer h-full">
+        <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
           <CardHeader>
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
               <FlaskConical className="w-6 h-6 text-blue-600" />
             </div>
-            <CardTitle className="text-blue-800">Biología Molecular</CardTitle>
+            <CardTitle className="text-blue-800 min-h-[3.5rem]">Biología Molecular</CardTitle>
           </CardHeader>
-          <CardContent>
-            <p className="text-slate-600 mb-4">
+          <CardContent className="flex-grow flex flex-col">
+            <p className="text-slate-600 mb-4 flex-grow">
               Estudios genéticos del ADN y ARN para diagnóstico de enfermedades congénitas, infecciosas y
               neoplásicas mediante FISH, RT-PCR y NGS.
             </p>
-            <Badge variant="secondary">Tecnología NGS</Badge>
+            <Badge variant="secondary" className="w-fit">Tecnología NGS</Badge>
           </CardContent>
-          <CardFooter>
+          <CardFooter className="mt-auto">
             <Button variant="link" className="text-blue-600 p-0">
               Ver más <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -175,63 +171,63 @@ export default function PathologyWebsite() {
         </Card>
       </Link>
 
-      <Card className="hover:shadow-lg transition-shadow border-blue-100">
+      <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
         <CardHeader>
           <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
             <Users className="w-6 h-6 text-blue-600" />
           </div>
-          <CardTitle className="text-blue-800">Interconsulta de Casos</CardTitle>
+          <CardTitle className="text-blue-800 min-h-[3.5rem]">Interconsulta de Casos</CardTitle>
         </CardHeader>
-        <CardContent>
-          <p className="text-slate-600 mb-4">
+        <CardContent className="flex-grow flex flex-col">
+          <p className="text-slate-600 mb-4 flex-grow">
             Ponemos a disposición la experiencia de nuestra red médica en distintos campos de la patología para
             casos complejos.
           </p>
-          <Badge variant="secondary">Red Internacional</Badge>
+          <Badge variant="secondary" className="w-fit">Red Internacional</Badge>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="mt-auto">
           <Button variant="link" className="text-blue-600 p-0">
             Ver más <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </CardFooter>
       </Card>
 
-      <Card className="hover:shadow-lg transition-shadow border-blue-100">
+      <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
         <CardHeader>
           <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
             <Clock className="w-6 h-6 text-blue-600" />
           </div>
-          <CardTitle className="text-blue-800">Estudios Transoperatorios</CardTitle>
+          <CardTitle className="text-blue-800 min-h-[3.5rem]">Estudios Transoperatorios</CardTitle>
         </CardHeader>
-        <CardContent>
-          <p className="text-slate-600 mb-4">
+        <CardContent className="flex-grow flex flex-col">
+          <p className="text-slate-600 mb-4 flex-grow">
             Apoyo durante procedimientos quirúrgicos con consultas en tiempo real. Servicio programado con 24
             horas de anticipación.
           </p>
-          <Badge variant="secondary">Tiempo Real</Badge>
+          <Badge variant="secondary" className="w-fit">Tiempo Real</Badge>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="mt-auto">
           <Button variant="link" className="text-blue-600 p-0">
             Ver más <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </CardFooter>
       </Card>
 
-      <Card className="hover:shadow-lg transition-shadow border-blue-100">
+      <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
         <CardHeader>
           <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
             <GraduationCap className="w-6 h-6 text-blue-600" />
           </div>
-          <CardTitle className="text-blue-800">Educación</CardTitle>
+          <CardTitle className="text-blue-800 min-h-[3.5rem]">Educación</CardTitle>
         </CardHeader>
-        <CardContent>
-          <p className="text-slate-600 mb-4">
+        <CardContent className="flex-grow flex flex-col">
+          <p className="text-slate-600 mb-4 flex-grow">
             Programas de Alta Especialidad en Hematopatología e Inmunohistoquímica, y rotaciones para Médicos
             Residentes.
           </p>
-          <Badge variant="secondary">educacion@picpatologia.com</Badge>
+          <Badge variant="secondary" className="w-fit">educacion@picpatologia.com</Badge>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="mt-auto">
           <Button variant="link" className="text-blue-600 p-0">
             Ver más <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
@@ -334,78 +330,78 @@ export default function PathologyWebsite() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
-              <CardHeader>
-                <CardTitle className="text-slate-800">Avances en Inmunohistoquímica</CardTitle>
-                <CardDescription>Nuevas técnicas y marcadores para diagnósticos más precisos</CardDescription>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-slate-800 min-h-[3rem]">Avances en Inmunohistoquímica</CardTitle>
+                <CardDescription className="min-h-[2.5rem]">Nuevas técnicas y marcadores para diagnósticos más precisos</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <Button variant="outline" size="sm">
                   Leer Más
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
-              <CardHeader>
-                <CardTitle className="text-slate-800">Biología Molecular en Oncología</CardTitle>
-                <CardDescription>Aplicaciones de NGS en el diagnóstico de cáncer</CardDescription>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-slate-800 min-h-[3rem]">Biología Molecular en Oncología</CardTitle>
+                <CardDescription className="min-h-[2.5rem]">Aplicaciones de NGS en el diagnóstico de cáncer</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <Button variant="outline" size="sm">
                   Leer Más
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
-              <CardHeader>
-                <CardTitle className="text-slate-800">Hematopatología Moderna</CardTitle>
-                <CardDescription>Enfoques actuales en el diagnóstico hematológico</CardDescription>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-slate-800 min-h-[3rem]">Hematopatología Moderna</CardTitle>
+                <CardDescription className="min-h-[2.5rem]">Enfoques actuales en el diagnóstico hematológico</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <Button variant="outline" size="sm">
                   Leer Más
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
-              <CardHeader>
-                <CardTitle className="text-slate-800">Hematopatología Moderna</CardTitle>
-                <CardDescription>Enfoques actuales en el diagnóstico hematológico</CardDescription>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-slate-800 min-h-[3rem]">Citopatología Avanzada</CardTitle>
+                <CardDescription className="min-h-[2.5rem]">Técnicas modernas en diagnóstico citológico</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <Button variant="outline" size="sm">
                   Leer Más
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
-              <CardHeader>
-                <CardTitle className="text-slate-800">Hematopatología Moderna</CardTitle>
-                <CardDescription>Enfoques actuales en el diagnóstico hematológico</CardDescription>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-slate-800 min-h-[3rem]">Patología Digital</CardTitle>
+                <CardDescription className="min-h-[2.5rem]">La revolución digital en el diagnóstico patológico</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <Button variant="outline" size="sm">
                   Leer Más
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
-              <CardHeader>
-                <CardTitle className="text-slate-800">Hematopatología Moderna</CardTitle>
-                <CardDescription>Enfoques actuales en el diagnóstico hematológico</CardDescription>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-slate-800 min-h-[3rem]">Medicina de Precisión</CardTitle>
+                <CardDescription className="min-h-[2.5rem]">Personalización del tratamiento oncológico</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <Button variant="outline" size="sm">
                   Leer Más
                 </Button>
