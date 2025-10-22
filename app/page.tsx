@@ -57,7 +57,7 @@ export default function PathologyWebsite() {
       </div>
     </div>
 
-    <div className="grid lg:grid-cols-2 gap-12 items-justify mb-16">
+    <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
       <div>
         <h3 className="text-2xl font-bold text-slate-800 mb-6">Nuestra Historia</h3>
         <p className="text-slate-600 mb-4">
@@ -69,7 +69,7 @@ export default function PathologyWebsite() {
           Actualmente, bajo la dirección del 
           <span className="font-semibold text-blue-700"> Dr. Adrián Alejandro Carballo Zárate</span>.
         </p>
-        <p className="text-slate-600">
+        <p className="text-slate-600" class="text-justify">
           Nuestro compromiso es integrar la Patología y la Biología Molecular para ofrecer una amplia variedad de estudios especializados 
           que proporcionan información precisa para definir diagnóstico, pronóstico, tratamiento y monitoreo de manera personalizada.
         </p>
