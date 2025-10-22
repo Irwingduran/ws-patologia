@@ -60,7 +60,7 @@ export default function PathologyWebsite() {
     <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
       <div>
         <h3 className="text-2xl font-bold text-slate-800 mb-6">Nuestra Historia</h3>
-        <p className="text-slate-600 mb-4" style="text-align: justify;">
+        <p className="text-slate-600 mb-4" style="text-align: justify">
           PATOLOGÍA, INMUNOHISTOQUÍMICA Y CITOPATOLOGÍA S.C. (PIC), somos un laboratorio referente en México, fundado en el año 2000 por la reconocida patóloga 
           <span className="font-semibold text-blue-700"> Dra. Alejandra Zárate Osorno</span>, quien con su visión y expertise 
           estableció los más altos estándares de calidad en diagnóstico patológico.
