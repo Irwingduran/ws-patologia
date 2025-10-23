@@ -182,11 +182,6 @@ export default function PathologyWebsite() {
           </p>
           <Badge variant="secondary" className="w-fit">Red Internacional</Badge>
         </CardContent>
-        <CardFooter className="mt-auto">
-          <Button variant="link" className="text-blue-600 p-0">
-            Ver más <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </CardFooter>
       </Card>
 
       <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
@@ -203,11 +198,6 @@ export default function PathologyWebsite() {
           </p>
           <Badge variant="secondary" className="w-fit">Tiempo Real</Badge>
         </CardContent>
-        <CardFooter className="mt-auto">
-          <Button variant="link" className="text-blue-600 p-0">
-            Ver más <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </CardFooter>
       </Card>
 
       <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
@@ -218,17 +208,12 @@ export default function PathologyWebsite() {
           <CardTitle className="text-blue-800 min-h-[3.5rem]">Educación</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col">
-          <p className="text-slate-600 mb-4 flex-grow">
+          <p className="text-slate-600 mb-4 flex-grow text-justify">
             Programas de Alta Especialidad en Hematopatología e Inmunohistoquímica, y rotaciones para Médicos
             Residentes.
           </p>
           <Badge variant="secondary" className="w-fit">educacion@picpatologia.com</Badge>
         </CardContent>
-        <CardFooter className="mt-auto">
-          <Button variant="link" className="text-blue-600 p-0">
-            Ver más <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </CardFooter>
       </Card>
     </div>
   </div>
