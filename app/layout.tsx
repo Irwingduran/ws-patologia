@@ -4,7 +4,12 @@ import SocialMediaButtons from '@/components/social-media-buttons'
 
 export const metadata: Metadata = {
   title: 'PIC Patología',
-  description: 'Laboratorio especializado en el área de oncología, donde integramos la Patología y la Biología Molecular para ofrecer una gran gama de estudios específicos que proporcionen la información necesaria para definir el diagnóstico, tratamiento y monitoreo de pacientes, a fin de definir terapias de precisión.'
+  description: 'Laboratorio especializado en el área de oncología, donde integramos la Patología y la Biología Molecular para ofrecer una gran gama de estudios específicos que proporcionen la información necesaria para definir el diagnóstico, tratamiento y monitoreo de pacientes, a fin de definir terapias de precisión.',
+  icons: {
+  icon: [
+    { url: '/logo/logo.png', type: 'image/x-icon' },
+  ],
+},
 }
 
 export default function RootLayout({
