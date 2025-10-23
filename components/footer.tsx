@@ -29,15 +29,21 @@ const Footer = () => {
                 Dr. Adrián Alejandro Carballo Zárate.
               </p>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
-                  <Phone className="w-4 h-4" />
-                </Button>
-                <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
-                  <Mail className="w-4 h-4" />
-                </Button>
-                <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
-                  <MessageCircle className="w-4 h-4" />
-                </Button>
+                <Link href="tel:5552543827">
+                  <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
+                    <Phone className="w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link href="mailto:info@picpatologia.com">
+                  <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
+                    <Mail className="w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link href="https://wa.me/5619852072">
+                  <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
+                    <MessageCircle className="w-4 h-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
 

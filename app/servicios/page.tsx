@@ -21,6 +21,7 @@ import {
 } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import Link from "next/link"
 
 export default function ServiciosPage() {
   return (
@@ -502,26 +503,32 @@ export default function ServiciosPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-              <Phone className="w-5 h-5 mr-2" />
-              Llamar Ahora
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Enviar Email
-            </Button>
+            <Link href="tel:5552543827">
+              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+                <Phone className="w-5 h-5 mr-2" />
+                Llamar Ahora
+              </Button>
+            </Link>
+            <Link href="https://wa.me/5619852072">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                WhatsApp
+              </Button>
+            </Link>
+            <Link href="mailto:info@picpatologia.com">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
+              >
+                <Mail className="w-5 h-5 mr-2" />
+                Enviar Email
+              </Button>
+            </Link>
           </div>
 
           <div className="mt-12 grid md:grid-cols-3 gap-6 text-center">
