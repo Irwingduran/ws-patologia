@@ -57,17 +57,17 @@ export default function PathologyWebsite() {
     <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
       <div>
         <h3 className="text-2xl font-bold text-slate-800 mb-6">Nuestra Historia</h3>
-        <p className="text-slate-600 mb-4">
-          PATOLOGÍA, INMUNOHISTOQUÍMICA Y CITOPATOLOGÍA S.C. (PIC), somos un laboratorio referente en México, fundado en el año 2000 por la reconocida patóloga 
-          <span className="font-semibold text-blue-700"> Dra. Alejandra Zárate Osorno</span>, quien con su visión y expertise 
+        <p className="text-slate-600 mb-4 text-justify">
+          PATOLOGÍA, INMUNOHISTOQUÍMICA Y CITOPATOLOGÍA S.C. (PIC), somos un laboratorio referente en México, fundado en el año 2000 por la reconocida patóloga
+          <span className="font-semibold text-blue-700"> Dra. Alejandra Zárate Osorno</span>, quien con su visión y expertise
           estableció los más altos estándares de calidad en diagnóstico patológico.
         </p>
-        <p className="text-slate-600 mb-4">
-          Actualmente, bajo la dirección del 
+        <p className="text-slate-600 mb-4 text-justify">
+          Actualmente, bajo la dirección del
           <span className="font-semibold text-blue-700"> Dr. Adrián Alejandro Carballo Zárate</span>.
         </p>
-        <p className="text-slate-600">
-          Nuestro compromiso es integrar la Patología y la Biología Molecular para ofrecer una amplia variedad de estudios especializados 
+        <p className="text-slate-600 text-justify">
+          Nuestro compromiso es integrar la Patología y la Biología Molecular para ofrecer una amplia variedad de estudios especializados
           que proporcionan información precisa para definir diagnóstico, pronóstico, tratamiento y monitoreo de manera personalizada.
         </p>
       </div>
@@ -109,7 +109,7 @@ export default function PathologyWebsite() {
             <CardTitle className="text-blue-800 min-h-[3.5rem]">Inmunohistoquímica</CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col">
-            <p className="text-slate-600 mb-4 flex-grow">
+            <p className="text-slate-600 mb-4 flex-grow text-justify">
               Técnica esencial para detectar antígenos específicos en tejidos mediante anticuerpos, permitiendo
               diagnósticos precisos y decisiones terapéuticas.
             </p>
@@ -132,7 +132,7 @@ export default function PathologyWebsite() {
             <CardTitle className="text-blue-800 min-h-[3.5rem]">Patología Quirúrgica y Hematopatología.</CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col">
-            <p className="text-slate-600 mb-4 flex-grow">
+            <p className="text-slate-600 mb-4 flex-grow text-justify">
               Estudiamos tejidos obtenidos durante distintos procedimientos quirúrgicos para diagnosticar enfermedades.
             </p>
             <Badge variant="secondary" className="w-fit">48 a 10 días hábiles</Badge>
@@ -154,7 +154,7 @@ export default function PathologyWebsite() {
             <CardTitle className="text-blue-800 min-h-[3.5rem]">Biología Molecular</CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col">
-            <p className="text-slate-600 mb-4 flex-grow">
+            <p className="text-slate-600 mb-4 flex-grow text-justify">
               Estudios genéticos del ADN y ARN para diagnóstico de enfermedades congénitas, infecciosas y
               neoplásicas mediante FISH, RT-PCR y NGS.
             </p>
@@ -176,7 +176,7 @@ export default function PathologyWebsite() {
           <CardTitle className="text-blue-800 min-h-[3.5rem]">Interconsulta de Casos</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col">
-          <p className="text-slate-600 mb-4 flex-grow">
+          <p className="text-slate-600 mb-4 flex-grow text-justify">
             Ponemos a disposición la experiencia de nuestra red médica en distintos campos de la patología para
             casos complejos.
           </p>
@@ -197,7 +197,7 @@ export default function PathologyWebsite() {
           <CardTitle className="text-blue-800 min-h-[3.5rem]">Estudios Transoperatorios</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col">
-          <p className="text-slate-600 mb-4 flex-grow">
+          <p className="text-slate-600 mb-4 flex-grow text-justify">
             Apoyo durante procedimientos quirúrgicos con consultas en tiempo real. Servicio programado con 24
             horas de anticipación.
           </p>

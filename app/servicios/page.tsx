@@ -19,7 +19,6 @@ import {
   MessageCircle,
   Award,
 } from "lucide-react"
-import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
@@ -150,85 +149,61 @@ export default function ServiciosPage() {
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl space-y-16">
           {/* Inmunohistoquímica */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <Microscope className="w-6 h-6 text-blue-600" />
-                </div>
-                <Badge className="bg-blue-100 text-blue-800">Servicio Principal</Badge>
+          <Card className="border-blue-100 bg-gradient-to-br from-white to-blue-50/30">
+            <CardHeader className="text-center pb-6">
+              <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Microscope className="w-10 h-10 text-blue-600" />
               </div>
+              <Badge className="bg-blue-100 text-blue-800 mx-auto mb-4">Servicio Principal</Badge>
               <h2 className="text-3xl font-bold text-slate-800">Inmunohistoquímica</h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
+            </CardHeader>
+            <CardContent className="space-y-6 max-w-4xl mx-auto">
+              <p className="text-lg text-slate-600 leading-relaxed text-center">
                 La inmunohistoquímica es una técnica esencial en el laboratorio de histopatología, utilizada para
                 detectar antígenos específicos en tejidos mediante anticuerpos, lo que permite emitir diagnósticos
                 precisos, guiar decisiones terapéuticas y brindar datos pronósticos y predictivos del comportamiento de
                 enfermedades específicas.
               </p>
 
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                    <h4 className="font-semibold text-slate-800">Más de 250 Anticuerpos Disponibles</h4>
-                    <p className="text-slate-600">Amplio panel de marcadores para diagnósticos precisos</p>
-                  </div>
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <CheckCircle className="w-8 h-8 text-green-600 mx-auto mb-3" />
+                  <h4 className="font-semibold text-slate-800 mb-2">Más de 250 Anticuerpos Disponibles</h4>
+                  <p className="text-sm text-slate-600">Amplio panel de marcadores para diagnósticos precisos</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                    <h4 className="font-semibold text-slate-800">Estándares de Calidad Internacional</h4>
-                    <p className="text-slate-600">Protocolos validados y buenas prácticas de laboratorio</p>
-                  </div>
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <CheckCircle className="w-8 h-8 text-green-600 mx-auto mb-3" />
+                  <h4 className="font-semibold text-slate-800 mb-2">Estándares de Calidad Internacional</h4>
+                  <p className="text-sm text-slate-600">Protocolos validados y buenas prácticas de laboratorio</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                    <h4 className="font-semibold text-slate-800">Resultados Rápidos y Confiables</h4>
-                    <p className="text-slate-600">Tiempos de respuesta optimizados sin comprometer la calidad</p>
-                  </div>
+                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                  <CheckCircle className="w-8 h-8 text-green-600 mx-auto mb-3" />
+                  <h4 className="font-semibold text-slate-800 mb-2">Resultados Rápidos y Confiables</h4>
+                  <p className="text-sm text-slate-600">Tiempos de respuesta optimizados sin comprometer la calidad</p>
                 </div>
               </div>
-            </div>
-            <div className="relative">
-              <Image
-                src="/placeholder.svg?height=400&width=500"
-                alt="Laboratorio de Inmunohistoquímica"
-                width={500}
-                height={400}
-                className="rounded-xl shadow-lg"
-              />
-            </div>
-          </div>
+            </CardContent>
+          </Card>
 
           <Separator className="my-16" />
 
           {/* Patología Quirúrgica */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative lg:order-1">
-              <Image
-                src="/placeholder.svg?height=400&width=500"
-                alt="Patología Quirúrgica"
-                width={500}
-                height={400}
-                className="rounded-xl shadow-lg"
-              />
-            </div>
-            <div className="space-y-6 lg:order-2">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <Stethoscope className="w-6 h-6 text-blue-600" />
-                </div>
-                <Badge className="bg-green-100 text-green-800">Diagnóstico Integral</Badge>
+          <Card className="border-green-100 bg-gradient-to-br from-white to-green-50/30">
+            <CardHeader className="text-center pb-6">
+              <div className="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Stethoscope className="w-10 h-10 text-green-600" />
               </div>
+              <Badge className="bg-green-100 text-green-800 mx-auto mb-4">Diagnóstico Integral</Badge>
               <h2 className="text-3xl font-bold text-slate-800">Patología Quirúrgica</h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
+            </CardHeader>
+            <CardContent className="space-y-6 max-w-4xl mx-auto">
+              <p className="text-lg text-slate-600 leading-relaxed text-center">
                 Estudiamos tejidos obtenidos de pacientes durante una cirugía para diagnosticar una enfermedad y ayudar
                 a determinar un plan de tratamiento. Realizamos el servicio de procesamiento de muestras y tinciones
                 especiales para pacientes, médicos, hospitales y centros de salud en todo México.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <Card className="border-blue-100">
                   <CardHeader className="pb-3">
                     <CardTitle className="text-lg flex items-center gap-2">
@@ -257,27 +232,27 @@ export default function ServiciosPage() {
                   </CardContent>
                 </Card>
               </div>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
 
           <Separator className="my-16" />
 
           {/* Biología Molecular */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <Dna className="w-6 h-6 text-blue-600" />
-                </div>
-                <Badge className="bg-purple-100 text-purple-800">Tecnología Avanzada</Badge>
+          <Card className="border-purple-100 bg-gradient-to-br from-white to-purple-50/30">
+            <CardHeader className="text-center pb-6">
+              <div className="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Dna className="w-10 h-10 text-purple-600" />
               </div>
+              <Badge className="bg-purple-100 text-purple-800 mx-auto mb-4">Tecnología Avanzada</Badge>
               <h2 className="text-3xl font-bold text-slate-800">Biología Molecular</h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
+            </CardHeader>
+            <CardContent className="space-y-6 max-w-4xl mx-auto">
+              <p className="text-lg text-slate-600 leading-relaxed text-center">
                 Realizamos estudios genéticos del ADN y ARN, utilizados en el diagnóstico de enfermedades congénitas,
                 infecciosas y neoplásicas, brindando información a nivel molecular sobre la afección de los pacientes.
               </p>
 
-              <div className="space-y-4">
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <Card className="border-purple-100 bg-purple-50/50">
                   <CardHeader className="pb-3">
                     <CardTitle className="text-lg flex items-center gap-2">
@@ -320,17 +295,8 @@ export default function ServiciosPage() {
                   </CardContent>
                 </Card>
               </div>
-            </div>
-            <div className="relative">
-              <Image
-                src="/placeholder.svg?height=400&width=500"
-                alt="Biología Molecular"
-                width={500}
-                height={400}
-                className="rounded-xl shadow-lg"
-              />
-            </div>
-          </div>
+            </CardContent>
+          </Card>
 
           <Separator className="my-16" />
 
