@@ -36,9 +36,6 @@ export default function PathologyWebsite() {
       {/* Hero Section */}
     <Hero/>
 
-      
-
-
       {/* About Section */}
     <section id="conocenos" className="py-16 px-4 bg-white relative">
   <div className="container mx-auto max-w-6xl">
@@ -333,7 +330,7 @@ export default function PathologyWebsite() {
             <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
               <CardHeader className="flex-grow">
-                <CardTitle className="text-slate-800 min-h-[3rem]">Avances en Inmunohistoquímica</CardTitle>
+                <CardTitle className="text-slate-800 min-h-[3rem] text-left">Avances en Inmunohistoquímica</CardTitle>
                 <CardDescription className="min-h-[2.5rem]">Nuevas técnicas y marcadores para diagnósticos más precisos</CardDescription>
               </CardHeader>
               <CardContent className="mt-auto">
@@ -346,7 +343,7 @@ export default function PathologyWebsite() {
             <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
               <CardHeader className="flex-grow">
-                <CardTitle className="text-slate-800 min-h-[3rem]">Biología Molecular en Oncología</CardTitle>
+                <CardTitle className="text-slate-800 min-h-[3rem] text-left">Biología Molecular en Oncología</CardTitle>
                 <CardDescription className="min-h-[2.5rem]">Aplicaciones de NGS en el diagnóstico de cáncer</CardDescription>
               </CardHeader>
               <CardContent className="mt-auto">
@@ -359,7 +356,7 @@ export default function PathologyWebsite() {
             <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
               <CardHeader className="flex-grow">
-                <CardTitle className="text-slate-800 min-h-[3rem]">Hematopatología Moderna</CardTitle>
+                <CardTitle className="text-slate-800 min-h-[3rem] text-left">Hematopatología Moderna</CardTitle>
                 <CardDescription className="min-h-[2.5rem]">Enfoques actuales en el diagnóstico hematológico</CardDescription>
               </CardHeader>
               <CardContent className="mt-auto">
@@ -372,7 +369,7 @@ export default function PathologyWebsite() {
             <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
               <CardHeader className="flex-grow">
-                <CardTitle className="text-slate-800 min-h-[3rem]">Citopatología Avanzada</CardTitle>
+                <CardTitle className="text-slate-800 min-h-[3rem] text-left">Citopatología Avanzada</CardTitle>
                 <CardDescription className="min-h-[2.5rem]">Técnicas modernas en diagnóstico citológico</CardDescription>
               </CardHeader>
               <CardContent className="mt-auto">
@@ -385,7 +382,7 @@ export default function PathologyWebsite() {
             <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
               <CardHeader className="flex-grow">
-                <CardTitle className="text-slate-800 min-h-[3rem]">Patología Digital</CardTitle>
+                <CardTitle className="text-slate-800 min-h-[3rem] text-left">Patología Digital</CardTitle>
                 <CardDescription className="min-h-[2.5rem]">La revolución digital en el diagnóstico patológico</CardDescription>
               </CardHeader>
               <CardContent className="mt-auto">
@@ -398,7 +395,7 @@ export default function PathologyWebsite() {
             <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg"></div>
               <CardHeader className="flex-grow">
-                <CardTitle className="text-slate-800 min-h-[3rem]">Medicina de Precisión</CardTitle>
+                <CardTitle className="text-slate-800 min-h-[3rem] text-left">Medicina de Precisión</CardTitle>
                 <CardDescription className="min-h-[2.5rem]">Personalización del tratamiento oncológico</CardDescription>
               </CardHeader>
               <CardContent className="mt-auto">
