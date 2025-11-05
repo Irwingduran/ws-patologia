@@ -38,7 +38,7 @@ export default function ServiciosPage() {
               Nuestros Servicios de
               <span className="text-blue-600 block">Patología</span>
             </h1>
-            <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed text-justify">
               Laboratorio especializado en oncología que integra Patología y Biología Molecular para ofrecer estudios
               específicos que definen diagnóstico, tratamiento y monitoreo de pacientes con terapias de precisión,
               respaldados por más de 24 años de experiencia.

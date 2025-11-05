@@ -227,7 +227,7 @@ export default function PathologyWebsite() {
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
               Evaluación Especializada de Cada Muestra
             </h2>
-            <p className="text-xl text-slate-600 max-w-4xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-4xl mx-auto text-justify">
               Integramos la Patología y la Biología Molecular de manera que cada muestra recibida es evaluada por un
               patólogo especialista para garantizar la máxima precisión diagnóstica
             </p>
