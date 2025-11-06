@@ -2,8 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Calendar, Award, ArrowRight, CheckCircle } from "lucide-react"
-import { Calendar, Award } from "lucide-react"
+import { Calendar, Award, CheckCircle } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -103,23 +102,6 @@ export default function Hero() {
                 <div className="text-blue-800" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>Marcadores</div>
               </div>
             </div>
-        <div className="flex justify-center">
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-blue-600 text-white hover:bg-blue-700">
-              <Link href="https://wa.me/525619852072" target="_blank">
-                <Calendar className="w-5 h-5 mr-2" />
-                Contacto
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-white/80 backdrop-blur-sm"
-            >
-              <Link href="/#servicios">
-              Ver Servicios
-              </Link>
-            </Button>
           </div>
         </div>
       </div>
