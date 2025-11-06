@@ -19,8 +19,6 @@ export default function Hero() {
         >
           <source src="/video/video-background.mp4" type="video/mp4" />
         </video>
-
-        <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
