@@ -19,6 +19,7 @@ import {
   FileText,
   Eye,
   Heart,
+  Award,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -27,6 +28,7 @@ import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
 import DoctorsSection from "@/components/doctors-section"
 import VimeoPlayer from "@/components/vimeo-player"
+import WhyChooseUs from "@/components/why-choose-us"
 
 export default function PathologyWebsite() {
   return (
@@ -36,11 +38,17 @@ export default function PathologyWebsite() {
       {/* Hero Section */}
     <Hero/>
 
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
       {/* About Section */}
     <section id="conocenos" className="py-16 px-4 bg-white relative">
   <div className="container mx-auto max-w-6xl">
     <div className="text-center mb-12">
-      <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Nuestra Historia</Badge>
+      <div className="inline-flex items-center gap-2 bg-blue-600/10 backdrop-blur-sm rounded-full px-6 py-3 mb-4 border border-blue-600/20" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
+        <Award className="w-4 h-4 text-yellow-600" />
+        <span className="text-blue-800 font-medium" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>Líderes en Patología</span>
+      </div>
       <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Sobre Nosotros</h2>
       <p className="text-xl text-slate-600 max-w-3xl mx-auto">
         Más de dos décadas de excelencia en diagnóstico patológico especializado
