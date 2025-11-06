@@ -37,10 +37,6 @@ export default function Hero() {
             </span>
             <span className="text-blue-600" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>Está Aquí</span>
           </h1>
-
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed bg-white/80 backdrop-blur-sm p-6 rounded-2xl text-justify" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-            Los tejidos son una extensión del paciente, por eso los tratamos con el mismo cuidado y respeto a través de servicios de diagnóstico de alta calidad.
-          </p>
         </div>
 
         <div className="flex justify-center">
