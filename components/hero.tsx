@@ -1,6 +1,9 @@
 "use client"
 
 import Image from "next/image"
+import { Button } from "./ui/button"
+import Link from "next/link"
+import { Calendar } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -29,14 +32,28 @@ export default function Hero() {
               alt="Laboratorio PIC"
               width={500}
               height={200}
-              className="w-auto h-32 lg:h-48"
+              className="w-auto h-38 lg:h-52"
               priority
             />
           </div>
 
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed bg-white/80 backdrop-blur-sm p-6 rounded-2xl text-justify" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-            Los tejidos son una extensión del paciente, por eso los tratamos con el mismo cuidado y respeto a través de servicios de diagnóstico de alta calidad.
-          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button asChild size="lg" className="bg-blue-600 text-white hover:bg-blue-700">
+                  <Link href="https://wa.me/525619852072" target="_blank">
+                    <Calendar className="w-5 h-5 mr-2" />
+                    Contacto
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
+                >
+                  <Link href="/#servicios">
+                  Ver Servicios
+                  </Link>
+                </Button>
+          </div>
         </div>
       </div>
     </section>
