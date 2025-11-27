@@ -15,19 +15,19 @@ export default function WhyChooseUs() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600" />
-                  <span className="text-gray-800">Más de 250 marcadores inmunohistoquímicos</span>
+                  <span className="text-gray-800">Personal Médico y Técnico certificado por el COMMAP y COMETEP.</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600" />
-                  <span className="text-gray-800">Certificación internacional IQNPath</span>
+                  <span className="text-gray-800">Más de 24 años de experiencia.</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600" />
-                  <span className="text-gray-800">Red de 23+ hospitales aliados</span>
+                  <span className="text-gray-800">Amplia red de subespecialistas Interconsultantes y colaboración con más de 23 instituciones en todo el país.</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600" />
-                  <span className="text-gray-800">Tecnología NGS de última generación</span>
+                  <span className="text-gray-800">Catálogo amplio de estudios de inmunohistoquímica y biología molecular.</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
