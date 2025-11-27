@@ -144,10 +144,7 @@ export const doctors: Doctor[] = [
     title: "Médico Cirujano",
     position: "Patólogo adscrito al Laboratorio PIC",
     image: "/docs/Ayami.png",
-    specialties: [
-      "Anatomía Patológica",
-      "Inmunohistoquímica",
-      "Citopatología"    ],
+    specialties: ["Anatomía Patológica", "Inmunohistoquímica", "Citopatología"],
     education: [
       {
         degree: "Curso de Alta Especialidad en Inmunohistoquímica de la Patología Quirúrgica",
@@ -204,8 +201,7 @@ export const doctors: Doctor[] = [
       "Hematopatología",
       "Anatomía Patológica",
       "Citopatología",
-      "Inmunohistoquímica"
-    ],
+      "Inmunohistoquímica"],
     education: [
       {
         degree: "Curso de Alta Especialidad en Hematopatología",
