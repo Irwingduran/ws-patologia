@@ -47,10 +47,6 @@ export default function WhyChooseUs() {
                   </Link>
                 </Button>
               </div>
-            </div>
-
-            
-            </div>
           </div>
         </div>
       </div>
