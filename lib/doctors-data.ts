@@ -197,11 +197,7 @@ export const doctors: Doctor[] = [
     title: "Médico Patólogo",
     position: "Especialista en Anatomía Patológica, Hematopatología, Inmunohistoquímica, citopatología y Biología molecular",
     image: "/docs/Socrates.png",
-    specialties: [
-      "Hematopatología",
-      "Anatomía Patológica",
-      "Citopatología",
-      "Inmunohistoquímica"],
+    specialties: ["Hematopatología", "Anatomía Patológica", "Citopatología", "Inmunohistoquímica"],
     education: [
       {
         degree: "Curso de Alta Especialidad en Hematopatología",
@@ -249,7 +245,7 @@ export const doctors: Doctor[] = [
     languages: ["Español"],
     contact: {
       phone: "",
-      email: "bmolecular@picpatologia.com ",
+      email: "bmolecular@picpatologia.com",
       address: ""
     }
   }
