@@ -75,7 +75,7 @@ export default function PathologyWebsite() {
           <span className="font-semibold text-blue-700"> Dr. Adrián Alejandro Carballo Zárate</span>.
         </p>
         <p className="text-slate-600 text-justify">
-          Nuestro compromiso es integrar la Patología y la Biología Molecular para ofrecer una amplia variedad de estudios especializados
+          Nuestro compromiso es integrar la Anatomía Patológica y la Biología Molecular para ofrecer una amplia variedad de estudios especializados
           que proporcionan información precisa para definir diagnóstico, pronóstico, tratamiento y monitoreo de manera personalizada.
         </p>
       </div>
