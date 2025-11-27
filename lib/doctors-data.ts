@@ -145,10 +145,9 @@ export const doctors: Doctor[] = [
     position: "Patólogo adscrito al Laboratorio PIC",
     image: "/docs/Ayami.png",
     specialties: [
-      "Patología Quirúrgica",
+      "Anatomía Patológica",
       "Inmunohistoquímica",
-      "Citopatología",
-      "Biología Molecular"
+      "Citopatología"
     ],
     education: [
       {
@@ -200,11 +199,11 @@ export const doctors: Doctor[] = [
     id: "socrates-garcia",
     name: "Dr. Sócrates García Gutiérrez",
     title: "Médico Patólogo",
-    position: "Especialista en Hematopatología y Patología Molecular",
+    position: "Especialista en en Anatomía Patológica, Hematopatología, Inmunohistoquímica, citopatología y Biología molecular",
     image: "/docs/Socrates.png",
     specialties: [
       "Hematopatología",
-      "Patología Molecular en Oncología",
+      "Anatomía Patológica",
       "Citopatología",
       "Inmunohistoquímica"
     ],
