@@ -30,9 +30,9 @@ export const doctors: Doctor[] = [
     id: "adrian-carballo",
     name: "Dr. Adrián Alejandro Carballo Zárate",
     title: "Médico Patólogo",
-    position: "Encargado del Departamento de Patología del Hospital Español",
+    position: "Director General de Pic Patología",
     image: "/docs/Adrian.png",
-    specialties: ["Hematopatología", "Patología Quirúrgica", "Inmunohistoquímica"],
+    specialties: ["Anatomía Patológica", "Inmunohistoquímica", "Hematopatología"],
     education: [
       {
         degree: "Postdoctorado en Hematopatología",
