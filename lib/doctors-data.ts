@@ -82,9 +82,7 @@ export const doctors: Doctor[] = [
       "Beca/apoyo económico para cursar 'Postdoctoral Fellowship in Hematopathology' en MD Anderson Cancer Center (2014-2016)"
       },
       {
-        "certificado por el Consejo Mexicano  de Médicos Anatomopatologos A.C.",
-        "Número de COMMAP 1326",
-        "Vigencia 9  de Febrero 2017 - 8 de Febrero 2027"
+        "certificado por el Consejo Mexicano  de Médicos Anatomopatologos A.C."
       }   
     ],
     languages: ["Español (nativo)", "Inglés 90%"],
