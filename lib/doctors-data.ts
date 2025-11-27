@@ -83,7 +83,7 @@ export const doctors: Doctor[] = [
     languages: ["Español (nativo)", "Inglés 90%"],
     contact: {
       phone: "(52) 55 2767 7554",
-      email: "dradriancarballo@picpatologia.com", "dr.adriancarballozarate@gmail.com",
+      email: "dradriancarballo@picpatologia.com - dr.adriancarballozarate@gmail.com",
       address: "Tennyson #346, depto 202, Colonia Polanco, Miguel Hidalgo, Ciudad de México, CP 11550"
     }
   },
