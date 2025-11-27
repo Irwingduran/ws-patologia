@@ -83,7 +83,7 @@ export const doctors: Doctor[] = [
     languages: ["Español (nativo)", "Inglés 90%"],
     contact: {
       phone: "(52) 55 2767 7554",
-      email: "adrian_alejandroc@hotmail.com",
+      email: "dradriancarballo@picpatologia.com", "dr.adriancarballozarate@gmail.com",
       address: "Tennyson #346, depto 202, Colonia Polanco, Miguel Hidalgo, Ciudad de México, CP 11550"
     }
   },
@@ -134,7 +134,7 @@ export const doctors: Doctor[] = [
     languages: ["Español", "Inglés B2"],
     contact: {
       phone: "55 5454 6964",
-      email: "dra.stephan.em@picpatologia.com",
+      email: "dra.estephan.em@picpatologia.com",
       address: "Av. Insurgentes Sur #4411, Col. Tlalcoligia, Alcaldía Tlalpan, CDMX, CP 14430"
     }
   },
@@ -191,7 +191,7 @@ export const doctors: Doctor[] = [
     languages: ["Español", "Inglés"],
     contact: {
       phone: "2281240513",
-      email: "ayami88@hotmail.com",
+      email: "ayamiogatam@picpatologia.com",
       address: "Río Nilo 13-103, Colonia Cuauhtémoc, Ciudad de México, CP 06500"
     }
   },
@@ -254,7 +254,7 @@ export const doctors: Doctor[] = [
     languages: ["Español"],
     contact: {
       phone: "",
-      email: "",
+      email: "bmolecular@picpatologia.com",
       address: ""
     }
   }
