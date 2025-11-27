@@ -85,6 +85,7 @@ export const doctors: Doctor[] = [
         "certificado por el Consejo Mexicano  de Médicos Anatomopatologos A.C.",
         "Número de COMMAP 1326",
         "Vigencia 9  de Febrero 2017 - 8 de Febrero 2027"
+      }   
     ],
     languages: ["Español (nativo)", "Inglés 90%"],
     contact: {
