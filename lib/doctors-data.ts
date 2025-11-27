@@ -30,9 +30,9 @@ export const doctors: Doctor[] = [
     id: "adrian-carballo",
     name: "Dr. Adrián Alejandro Carballo Zárate",
     title: "Médico Patólogo",
-    position: "Director General de PIC Patología",
+    position: "Encargado del Departamento de Patología del Hospital Español",
     image: "/docs/Adrian.png",
-    specialties: ["Anatomía Patológica", "Hematopatología", "Inmunohistoquímica"],
+    specialties: ["Hematopatología", "Patología Quirúrgica", "Inmunohistoquímica"],
     education: [
       {
         degree: "Postdoctorado en Hematopatología",
@@ -83,7 +83,7 @@ export const doctors: Doctor[] = [
     languages: ["Español (nativo)", "Inglés 90%"],
     contact: {
       phone: "(52) 55 2767 7554",
-      email: "dradriancarballo@picpatologia.com", "dr.adriancarballozarate@gmail.com",
+      email: "adrian_alejandroc@hotmail.com",
       address: "Tennyson #346, depto 202, Colonia Polanco, Miguel Hidalgo, Ciudad de México, CP 11550"
     }
   },
@@ -92,7 +92,7 @@ export const doctors: Doctor[] = [
     name: "Dra. Stephanie Escobar Muñoz",
     title: "Médico Patólogo",
     position: "Especialista en Anatomía Patológica e Inmunohistoquímica",
-    image: "/docs/Stephanie.png",
+    image: "/placeholder-user.jpg",
     specialties: ["Anatomía Patológica", "Inmunohistoquímica", "Citopatología"],
     education: [
       {
@@ -134,7 +134,7 @@ export const doctors: Doctor[] = [
     languages: ["Español", "Inglés B2"],
     contact: {
       phone: "55 5454 6964",
-      email: "dra.estephan.em@picpatologia.com",
+      email: "dra.stephan.em@picpatologia.com",
       address: "Av. Insurgentes Sur #4411, Col. Tlalcoligia, Alcaldía Tlalpan, CDMX, CP 14430"
     }
   },
@@ -143,8 +143,13 @@ export const doctors: Doctor[] = [
     name: "Dra. Ayami Ogata Medel",
     title: "Médico Cirujano",
     position: "Patólogo adscrito al Laboratorio PIC",
-    image: "/docs/Ayami.png",
-    specialties: ["Anatomía Patológica", "Inmunohistoquímica", "Citopatología"],
+    image: "/placeholder-user.jpg",
+    specialties: [
+      "Patología Quirúrgica",
+      "Inmunohistoquímica",
+      "Citopatología",
+      "Biología Molecular"
+    ],
     education: [
       {
         degree: "Curso de Alta Especialidad en Inmunohistoquímica de la Patología Quirúrgica",
@@ -187,7 +192,7 @@ export const doctors: Doctor[] = [
     languages: ["Español", "Inglés"],
     contact: {
       phone: "2281240513",
-      email: "ayamiogatam@picpatologia.com",
+      email: "ayami88@hotmail.com",
       address: "Río Nilo 13-103, Colonia Cuauhtémoc, Ciudad de México, CP 06500"
     }
   },
@@ -195,9 +200,14 @@ export const doctors: Doctor[] = [
     id: "socrates-garcia",
     name: "Dr. Sócrates García Gutiérrez",
     title: "Médico Patólogo",
-    position: "Especialista en Anatomía Patológica, Hematopatología, Inmunohistoquímica, citopatología y Biología molecular",
+    position: "Especialista en Hematopatología y Patología Molecular",
     image: "/docs/Socrates.png",
-    specialties: ["Hematopatología", "Anatomía Patológica", "Citopatología", "Inmunohistoquímica"],
+    specialties: [
+      "Hematopatología",
+      "Patología Molecular en Oncología",
+      "Citopatología",
+      "Inmunohistoquímica"
+    ],
     education: [
       {
         degree: "Curso de Alta Especialidad en Hematopatología",
@@ -245,7 +255,7 @@ export const doctors: Doctor[] = [
     languages: ["Español"],
     contact: {
       phone: "",
-      email: "bmolecular@picpatologia.com",
+      email: "",
       address: ""
     }
   }
