@@ -47,7 +47,7 @@ export default function DoctorsSection() {
               Equipo Médico Especializado
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-              Conozca a nuestros especialistas certificados en patología con formación de excelencia
+              Conozca a nuestros principales especialistas. Este es solo un segmento de nuestro personal. Además, contamos con otros profesionales capacitados en diversas áreas para brindar un servicio integral y completo.
             </p>
           </div>
 
