@@ -23,6 +23,7 @@ export interface Doctor {
     email?: string;
     address?: string;
   };
+  publications?: string[];
 }
 
 export const doctors: Doctor[] = [
@@ -85,7 +86,30 @@ export const doctors: Doctor[] = [
       phone: "(52) 55 2767 7554",
       email: "dradriancarballo@picpatologia.com - dr.adriancarballozarate@gmail.com",
       address: "Tennyson #346, depto 202, Colonia Polanco, Miguel Hidalgo, Ciudad de México, CP 11550"
-    }
+    },
+    publications: [
+      "Barranco-Lampon G, Martinez-Castro R, Arana-Luna L, et al. First inter-institutional consensus on Chronic Myeloproliferative Neoplasms. Gaceta Médica de México. 2022;158(Supl 1): 1-10. doi: 10.24875/GMM.M22000801.",
+      "Barranco-Lampon G, Martinez-Castro R, Arana-Luna L, et al. Myelofibrosis: diagnosis and treatment. Gaceta Médica de México. 2022;158(Supl 1): 26-37. doi: 10.24875/GMM.M22000804.",
+      "Barranco-Lampon G, Martinez-Castro R, Arana-Luna L, et al. Pregnancy in myeloproliferative neoplasms. Gaceta Médica de México. 2022;158(Supl 1): 59-62. doi: 10.24875/GMM.M22000807.",
+      "Barranco-Lampon G, Martinez-Castro R, Arana-Luna L, et al. Polycythemia vera. Gaceta Médica de México. 2022;158(Supl 1):11-16. doi: 10.24875/GMM.M22000802.",
+      "Barranco-Lampon G, Martinez-Castro R, Arana-Luna L, et al. Essential thrombocythaemia. Gaceta Médica de México. 2022;158(Supl 1):17-25. doi: 10.24875/GMM.M22000803.",
+      "Barranco-Lampon G, Martinez-Castro R, Arana-Luna L, et al. Transplantatiom oh hematopoietic progenitors in myelofibrosis. Gaceta Médica de México. 2022;158(Supl 1):38-44. doi: 10.24875/GMM.M22000805.",
+      "Sergio Pina-Oviedo, Carlos Ortiz-Hidalgo, Adrián Alejandro Carballo-Zarate, et al. ALK-Negative Anaplastic Large Cell Lymphoma: Current Concepts and Molecular Pathogenesis of a Heterogeneous Group of Large T-Cell Lymphomas. Cancers. 2021;13(8):4667. doi: 10.3390/cancers13184667.",
+      "Mark G. Evans, L. Jeffrey Medeiros, Huang-You Wang, et al. Breast implant-associated anaplastic large cell lymphoma: Clinical follow up and analysis of sequential specimens of untreated patients shows persistent or progressive disease. Mod Pathol. 2021. Online ahead of print. doi: 10.1038/s41379-021-00842-6.",
+      "Ramos-Gallardo G, Vélez-Benitez E. Cuenca-Pardo J, et al. What is the Process for Breast Implant Manufacturing? Inside Eight Breast Implant Factories. Aesthetic Plast Surg. 2020;44(6):2063-2074. doi: 10.1007/s00266-020-01844-6.",
+      "Marysol Macedo-Pérez, Zamira F. Barragán-Estudillo, Elizabeth Castillo-Montufar, et al. Dermatological findings in COVID-19 patients: Mexican experience. Int J of Dermatology. 2020;59(7):872-873. doi: 10.1111/ijd.14958.",
+      "Maria-Isabel Caravantes-Cortes, Ernesto Roldan-Valadez, Roberto-Daniel Zwojewski-Martinez, et al. Breast Prosthesis Syndrome: Pathophisiology and Management Algorythm. Aesth Plast Surg. 2020;44(5):1423-1437. doi: 10.1007/s00266-020-01663-9.",
+      "Guillermo Ramos-Gallardo, Adrian Alejandro Carballo-Zarate, Jesus Cuenca-Pardo, et al. What is the Evidence of Lymphoma in Patients with Prostheses Other Than Breast Implants?. Aesth Plast Surg. 2020;44(2):286-294. doi: 10.1007/s00266-019-01569-1.",
+      "L-V. Fuentes-Ernult, P. Gálvez-Castillejos, A.A. Molina-Villena, et al. Unusual Findings in Appendicectomy: Experience in a Third Level Hospital with More than 1000 Specimens. Surgical Science. 2019;10:377-384. doi: 10.4236/ss.2019.1011042",
+      "Carballo-Zarate A, Garcia-Horton A, Palma-Berre Lizbeth, et al. Distribution of Lymphomas in Mexico: A multicenter descriptive Study. Joural of Hematopathology. 2018:11:99-105. Doi: 10.1007/s12308-018-0336-0.",
+      "Hidalgo-López JE, Carballo-Zarate A, Verstovsek S, et al. Bone Marrow findings in blast phase of polycythymia vera. Ann Hematol.2018,97(3):425-434. doi: 10.1007/s00277-017-3211-7.",
+      "Tang G, Hidalgo-Lopez JE, Wang SA, et al. Characteristics and clinical significance of cytogenetic abnormalities in polycythemia vera. Haematologica. 2017; 102(9):1511-1518. doi: 10.3324/haematol.2017.165795.",
+      "Hao S, Lin P, Medeiros JL, et al. Clinical implications of cytogenetic heteroigenety in multiple myeloma patients with TP53 deletions. Mod Pathol.2017;30(10):1378-1386. doi: 10.1038/modpathol.2017.63.",
+      "Carballo-Zarate AA, Medeiros LJ, Fang L, eta al. Additional Structural Chromosomal Aberrations Are Associated with Inferior Clinical Outcome in Patients with Hyperdiploid Multiple Myeloma: a Single Institution Experience. Modern Pathol. 2017; 30(6):843-853. doi: 10.1038/modpathol.2017.3.",
+      "Hidalgo-Lopez JE, Yave M, Carballo-zarate AA, et al. Donor-Derived T-Cell Large Granular Lymphocytic Leukemia in a Patient With Peripheral T-Cell Lymphoma. J Natl Compr Canc Netw. 2016, 14(8): 939-944. doi: 10.6004/jnccn.2016.0100.",
+      "Carrera-Muiñoz A, Diaz-Gonzalez C, Monjes-Jones JE, et al. Tratamiento de un Adamantinoma de Fémur con Preservación de la Extremidad Inferior: Reporte de un Caso y Revisión de la Literatura. Cirugia y cirujanos. 2015,83(3):249-254. doi: 10.1016/j.circir.2015.05.011.",
+      "Morales G, Páez V, García Y, et al. Caso Clínico. Colitis ulcerosa infecciosa por Aeromonas spp. Endoscopia 2014;26(1):19-22 doi:10.1016/j.endomx.2014.04.004."
+    ]
   },
   {
     id: "stephanie-escobar",
@@ -193,7 +217,12 @@ export const doctors: Doctor[] = [
       phone: "2281240513",
       email: "ayamiogatam@picpatologia.com",
       address: "Río Nilo 13-103, Colonia Cuauhtémoc, Ciudad de México, CP 06500"
-    }
+    },
+    publications: [
+      "Nuestra experiencia en un caso de absceso hipofisiario que se presentó como síndrome del seno cavernoso. Chávez López José Antonio 1 , García Cisneros Rosalina 2* , Zarate Méndez Antonio 3 , Morel Trejo Carmen 4 ,Ogata Medel Ayami 5 . archivosdeneurociencias.com Presentación del caso Vol. 21 | No. 4 | Octubre - Diciembre 2016 – 51 https://www.medigraphic.com/pdfs/arcneu/ane-2016/ane164f.pdf",
+      "Neoplasia mixta neuroendócrina-no neuroendócrina de páncreas. Reporte de un caso. Dr. Sergio Hernández García, Dra. Adriana Castillo Ortega, Dr. José Alberto González, Dr. Jorge Barrón Reyes, Dr. Marvin Benavides Maruri, Dra. Ayami Ogata Medel. Centro Médico Nacional 20 de Noviembre.",
+      "Presentación y publicación digital del trabajo titulado: Perfil inmunohistoquímico de casos de cáncer de mama en pacientes del sexo masculino en el Centro Médico Nacional “20 de Noviembre” en un periodo de ocho años. Presentado en el XXXI FORO DEL RESIDENTE 2018 que se llevó a cabo el sábado 8 diciembre de 2018 en el Auditorio del Servicio de Patología del Hospital General de México “Dr. Eduardo Liceaga” y desde entonces fue publicado en la página web de la Asociación. Dicha publicación está disponible para los asociados en www.ampatologia.org"
+    ]
   },
   {
     id: "socrates-garcia",
@@ -256,6 +285,11 @@ export const doctors: Doctor[] = [
       phone: "",
       email: "bmolecular@picpatologia.com",
       address: ""
-    }
+    },
+    publications: [
+      "Eur J Haematol. 2024 Sep;113(3):321-329. doi: 10.1111/ejh.14230. Epub 2024 May 14.PMID: 38742655",
+      "Viruses. 2025 Aug 21;17(8):1147. doi: 10.3390/v17081147.PMID: 40872859",
+      "Ann Hematol. 2024 Apr;103(4):1317-1325. doi: 10.1007/s00277-023-05583-x. Epub 2023 Dec 13.PMID: 38091053"
+    ]
   }
 ];

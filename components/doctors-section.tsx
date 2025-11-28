@@ -23,6 +23,7 @@ import {
   Languages,
   Lightbulb,
   User,
+  BookOpen,
 } from "lucide-react"
 import { doctors, type Doctor } from "@/lib/doctors-data"
 
@@ -142,7 +143,7 @@ export default function DoctorsSection() {
               </DialogHeader>
 
               <Tabs defaultValue="education" className="w-full">
-                <TabsList className="grid w-full grid-cols-4">
+                <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 h-auto">
                   <TabsTrigger value="education" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <GraduationCap className="w-4 h-4 mr-2" />
                     Educación
@@ -154,6 +155,10 @@ export default function DoctorsSection() {
                   <TabsTrigger value="certifications" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <Award className="w-4 h-4 mr-2" />
                     Certificaciones
+                  </TabsTrigger>
+                  <TabsTrigger value="publications" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+                    <BookOpen className="w-4 h-4 mr-2" />
+                    Publicaciones
                   </TabsTrigger>
                   <TabsTrigger value="contact" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <Mail className="w-4 h-4 mr-2" />
@@ -285,6 +290,37 @@ export default function DoctorsSection() {
                           </Card>
                         </>
                       )}
+                  </div>
+                </TabsContent>
+
+                <TabsContent value="publications" className="space-y-4 mt-6">
+                  <h3 className="text-lg font-semibold text-slate-800 flex items-center gap-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
+                    <BookOpen className="w-5 h-5 text-blue-600" />
+                    Publicaciones
+                  </h3>
+                  <div className="space-y-4">
+                    {selectedDoctor.publications && selectedDoctor.publications.length > 0 ? (
+                      <Card className="border-l-4 border-l-pink-500">
+                        <CardContent className="pt-4">
+                          <ul className="space-y-4">
+                            {selectedDoctor.publications.map((pub, index) => (
+                              <li
+                                key={index}
+                                className="flex items-start gap-2 text-sm text-slate-700"
+                                style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}
+                              >
+                                <BookOpen className="w-4 h-4 text-pink-600 mt-0.5 flex-shrink-0" />
+                                <span className="text-justify">{pub}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    ) : (
+                      <p className="text-slate-500" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+                        No hay publicaciones registradas.
+                      </p>
+                    )}
                   </div>
                 </TabsContent>
 
