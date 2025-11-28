@@ -75,7 +75,7 @@ export default function PathologyWebsite() {
           <span className="font-semibold text-blue-700"> Dr. Adrián Alejandro Carballo Zárate</span>.
         </p>
         <p className="text-slate-600 text-justify">
-          Nuestro compromiso es integrar la Patología y la Biología Molecular para ofrecer una amplia variedad de estudios especializados
+          Nuestro compromiso es integrar la Anatomía Patológica y la Biología Molecular para ofrecer una amplia variedad de estudios especializados
           que proporcionan información precisa para definir diagnóstico, pronóstico, tratamiento y monitoreo de manera personalizada.
         </p>
       </div>
@@ -143,7 +143,7 @@ export default function PathologyWebsite() {
             <p className="text-slate-600 mb-4 flex-grow text-justify">
               Estudiamos tejidos obtenidos durante distintos procedimientos quirúrgicos para diagnosticar enfermedades.
             </p>
-            <Badge variant="secondary" className="w-fit">48 a 10 días hábiles</Badge>
+            <Badge variant="secondary" className="w-fit">48 horas a 10 días hábiles</Badge>
           </CardContent>
           <CardFooter className="mt-auto">
             <Button variant="link" className="text-blue-600 p-0">
