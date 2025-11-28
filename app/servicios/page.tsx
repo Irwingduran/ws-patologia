@@ -30,7 +30,7 @@ export default function ServiciosPage() {
      <Navbar/>
 
       {/* Hero Section */}
-      <section className="py-16 px-4" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+      <section className="pt-32 pb-16 px-4" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Servicios Especializados</Badge>
@@ -45,7 +45,7 @@ export default function ServiciosPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid lg:grid-cols-2 gap-6 mb-12">
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-3xl font-bold text-blue-600 mb-2">250+</div>
               <div className="text-slate-600">Marcadores de Inmunohistoquímica</div>
@@ -53,10 +53,6 @@ export default function ServiciosPage() {
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-3xl font-bold text-blue-600 mb-2">23</div>
               <div className="text-slate-600">Hospitales y Centros Aliados</div>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
-              <div className="text-slate-600">Disponibilidad para Emergencias</div>
             </div>
           </div>
         </div>
@@ -531,7 +527,7 @@ export default function ServiciosPage() {
             </Link>
           </div>
 
-          <div className="mt-12 grid md:grid-cols-3 gap-6 text-center">
+          <div className="mt-12 grid md:grid-cols-2 gap-6 text-center">
             <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
               <div className="text-2xl font-bold mb-2">Lun - Vie</div>
               <div className="text-blue-100">7:30 AM - 8:30 PM</div>
@@ -539,10 +535,6 @@ export default function ServiciosPage() {
             <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
               <div className="text-2xl font-bold mb-2">Sábados</div>
               <div className="text-blue-100">9:00 AM - 1:00 PM</div>
-            </div>
-            <div style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-              <div className="text-2xl font-bold mb-2">Emergencias</div>
-              <div className="text-blue-100">24/7 Disponible</div>
             </div>
           </div>
         </div>
