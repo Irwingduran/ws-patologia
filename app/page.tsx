@@ -143,7 +143,7 @@ export default function PathologyWebsite() {
             <p className="text-slate-600 mb-4 flex-grow text-justify">
               Estudiamos tejidos obtenidos durante distintos procedimientos quirúrgicos para diagnosticar enfermedades.
             </p>
-            <Badge variant="secondary" className="w-fit">48 a 10 días hábiles</Badge>
+            <Badge variant="secondary" className="w-fit">48 horas a 10 días hábiles</Badge>
           </CardContent>
           <CardFooter className="mt-auto">
             <Button variant="link" className="text-blue-600 p-0">
