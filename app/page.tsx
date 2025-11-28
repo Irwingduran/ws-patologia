@@ -108,7 +108,7 @@ export default function PathologyWebsite() {
     </div>
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <Link href="/servicios" className="cursor-pointer h-full">
+      <Link href="/catalogo/CatalogoBM.pdf" target="_blank" className="cursor-pointer h-full">
         <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
           <CardHeader>
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -125,7 +125,7 @@ export default function PathologyWebsite() {
           </CardContent>
           <CardFooter className="mt-auto">
             <Button variant="link" className="text-blue-600 p-0">
-              Ver más <ArrowRight className="ml-2 h-4 w-4" />
+              Ver Catálogo <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </CardFooter>
         </Card>
@@ -153,7 +153,7 @@ export default function PathologyWebsite() {
         </Card>
       </Link>
 
-      <Link href="/servicios" className="cursor-pointer h-full">
+      <Link href="/catalogo/CatalogoBM.pdf" target="_blank" className="cursor-pointer h-full">
         <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
           <CardHeader>
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -170,7 +170,7 @@ export default function PathologyWebsite() {
           </CardContent>
           <CardFooter className="mt-auto">
             <Button variant="link" className="text-blue-600 p-0">
-              Ver más <ArrowRight className="ml-2 h-4 w-4" />
+              Ver Catálogo <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </CardFooter>
         </Card>
