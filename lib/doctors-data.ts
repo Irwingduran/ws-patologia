@@ -78,9 +78,7 @@ export const doctors: Doctor[] = [
       }
     ],
     certifications: [
-      {
         "certificado por el Consejo Mexicano  de Médicos Anatomopatologos A.C."
-      }, 
     ],
     languages: ["Español (nativo)", "Inglés 90%"],
     contact: {
