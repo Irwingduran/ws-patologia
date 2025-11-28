@@ -92,7 +92,7 @@ export const doctors: Doctor[] = [
     name: "Dra. Stephanie Escobar Muñoz",
     title: "Médico Patólogo",
     position: "Especialista en Anatomía Patológica e Inmunohistoquímica",
-    image: "/placeholder-user.jpg",
+    image: "/docs/Stephanie.png",
     specialties: ["Anatomía Patológica", "Inmunohistoquímica", "Citopatología"],
     education: [
       {
@@ -143,7 +143,7 @@ export const doctors: Doctor[] = [
     name: "Dra. Ayami Ogata Medel",
     title: "Médico Cirujano",
     position: "Patólogo adscrito al Laboratorio PIC",
-    image: "/placeholder-user.jpg",
+    image: "/docs/Ayami.png",
     specialties: [
       "Patología Quirúrgica",
       "Inmunohistoquímica",
