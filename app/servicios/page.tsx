@@ -350,15 +350,15 @@ export default function ServiciosPage() {
                   <ul className="space-y-2 text-sm text-slate-600">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-600" />
-                      Citología cervical
+                      Citología cervicovagial y de líquidos en general 
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-600" />
-                      Citología de líquidos
+                      Citología de Biopsias por Aspiración con Aguja Fina
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-600" />
-                      Punción aspiración
+                      Bloque celular
                     </li>
                   </ul>
                 </CardContent>
@@ -380,11 +380,11 @@ export default function ServiciosPage() {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-600" />
-                      Citometría de flujo
+                      Médula ósea
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-600" />
-                      Médula ósea
+                      Ganglio linfático y bazo
                     </li>
                   </ul>
                 </CardContent>
