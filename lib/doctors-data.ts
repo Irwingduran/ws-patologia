@@ -79,11 +79,8 @@ export const doctors: Doctor[] = [
     ],
     certifications: [
       {
-      "Beca/apoyo económico para cursar 'Postdoctoral Fellowship in Hematopathology' en MD Anderson Cancer Center (2014-2016)"
-      },
-      {
         "certificado por el Consejo Mexicano  de Médicos Anatomopatologos A.C."
-      }   
+      }, 
     ],
     languages: ["Español (nativo)", "Inglés 90%"],
     contact: {
