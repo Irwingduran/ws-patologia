@@ -61,15 +61,15 @@ const Navbar = () => {
 
   return (
     <header className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50 transition-shadow ${isScrolled ? 'shadow-md' : 'shadow-none'}`}>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-0 py-0">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3" onClick={handleLinkClick}>
-            <div className="w-16 h-16 rounded-lg flex items-center justify-center">
+            <div className="w-28 h-28 rounded-lg flex items-center justify-center">
               <Image 
                 src="/logo/logo.png" 
                 alt="Logo PIC Patología" 
-                width={84} 
-                height={84} 
+                width={100} 
+                height={100} 
                 priority
                 className="w-full h-auto"
               />
