@@ -18,11 +18,6 @@ export interface Doctor {
   certifications?: string[];
   skills?: string[];
   languages?: string[];
-  contact: {
-    phone?: string;
-    email?: string;
-    address?: string;
-  };
   publications?: string[];
 }
 
@@ -84,11 +79,6 @@ export const doctors: Doctor[] = [
       "Vigencia: 9 de Febrero 2017 - 8 de Febrero 2027"
     ],
     languages: ["Español (nativo)", "Inglés 90%"],
-    contact: {
-      phone: "(52) 55 2767 7554",
-      email: "dradriancarballo@picpatologia.com - dr.adriancarballozarate@gmail.com",
-      address: "Tennyson #346, depto 202, Colonia Polanco, Miguel Hidalgo, Ciudad de México, CP 11550"
-    },
     publications: [
       "Barranco-Lampon G, Martinez-Castro R, Arana-Luna L, et al. First inter-institutional consensus on Chronic Myeloproliferative Neoplasms. Gaceta Médica de México. 2022;158(Supl 1): 1-10. doi: 10.24875/GMM.M22000801.",
       "Barranco-Lampon G, Martinez-Castro R, Arana-Luna L, et al. Myelofibrosis: diagnosis and treatment. Gaceta Médica de México. 2022;158(Supl 1): 26-37. doi: 10.24875/GMM.M22000804.",
@@ -158,11 +148,6 @@ export const doctors: Doctor[] = [
       "Evaluación del paciente"
     ],
     languages: ["Español", "Inglés B2"],
-    contact: {
-      phone: "55 5454 6964",
-      email: "dra.estephan.em@picpatologia.com",
-      address: "Av. Insurgentes Sur #4411, Col. Tlalcoligia, Alcaldía Tlalpan, CDMX, CP 14430"
-    }
   },
   {
     id: "ayami-ogata",
@@ -215,11 +200,6 @@ export const doctors: Doctor[] = [
       "Intercambio Profesional en Departamento de Cardiología, Hospital de La Timone, Marsella, Francia (2012)"
     ],
     languages: ["Español", "Inglés"],
-    contact: {
-      phone: "2281240513",
-      email: "ayamiogatam@picpatologia.com",
-      address: "Río Nilo 13-103, Colonia Cuauhtémoc, Ciudad de México, CP 06500"
-    },
     publications: [
       "Nuestra experiencia en un caso de absceso hipofisiario que se presentó como síndrome del seno cavernoso. Chávez López José Antonio 1 , García Cisneros Rosalina 2* , Zarate Méndez Antonio 3 , Morel Trejo Carmen 4 ,Ogata Medel Ayami 5 . archivosdeneurociencias.com Presentación del caso Vol. 21 | No. 4 | Octubre - Diciembre 2016 – 51 https://www.medigraphic.com/pdfs/arcneu/ane-2016/ane164f.pdf",
       "Neoplasia mixta neuroendócrina-no neuroendócrina de páncreas. Reporte de un caso. Dr. Sergio Hernández García, Dra. Adriana Castillo Ortega, Dr. José Alberto González, Dr. Jorge Barrón Reyes, Dr. Marvin Benavides Maruri, Dra. Ayami Ogata Medel. Centro Médico Nacional 20 de Noviembre.",
@@ -283,15 +263,74 @@ export const doctors: Doctor[] = [
       "Cédula Profesional de Médico Cirujano No. 6313295"
     ],
     languages: ["Español"],
-    contact: {
-      phone: "",
-      email: "bmolecular@picpatologia.com",
-      address: ""
-    },
     publications: [
       "Eur J Haematol. 2024 Sep;113(3):321-329. doi: 10.1111/ejh.14230. Epub 2024 May 14.PMID: 38742655",
       "Viruses. 2025 Aug 21;17(8):1147. doi: 10.3390/v17081147.PMID: 40872859",
       "Ann Hematol. 2024 Apr;103(4):1317-1325. doi: 10.1007/s00277-023-05583-x. Epub 2023 Dec 13.PMID: 38091053"
+    ]
+  },
+  {
+    id: "jesus-segura",
+    name: "Dr. Jesús Román Segura Rivera",
+    title: "Médico Anatomopatólogo",
+    position: "Alta especialidad en Hematopatología",
+    image: "/docs/roman.png",
+    specialties: ["Anatomía Patológica", "Hematopatología"],
+    education: [
+      {
+        degree: "Fellowship posdoctoral de investigación, Hematopatología",
+        institution: "University of Texas, MD Anderson Cancer Center, Houston, Texas, Estados Unidos",
+        period: "2023-2024"
+      },
+      {
+        degree: "Curso de alta especialidad en Hematopatología",
+        institution: "Universidad Nacional Autónoma de México, Hospital Español, Ciudad de México, México",
+        period: "2021-2023"
+      },
+      {
+        degree: "Curso de especialización en Anatomía Patológica",
+        institution: "Universidad Nacional Autónoma de México, Fundación Clínica Médica Sur, Ciudad de México, México",
+        period: "2018-2021"
+      },
+      {
+        degree: "Medicina",
+        institution: "Universidad Autónoma de Baja California, Tijuana, Baja California, México",
+        period: "2010-2018"
+      }
+    ],
+    experience: [
+      {
+        position: "Anatomopatólogo / Hematopatólogo",
+        institution: "Laboratorio PIC / CEPAMA, Ciudad de México, México",
+        period: "2023-actualidad"
+      },
+      {
+        position: "Médico general",
+        institution: "Hospital Insurgentes Río, Tijuana, Baja California, México",
+        period: "2017-2018"
+      },
+      {
+        position: "Asistente de laboratorio",
+        institution: "Patología y Citología del Río, Tijuana, Baja California, México",
+        period: "2011-2018"
+      }
+    ],
+    certifications: [
+      "Cédula de especialista: 12433213",
+      "Certificado COMMAP: 1908",
+      "RFC: SERJ910115EX3",
+      "CURP: SERJ910115HBCSGV02"
+    ],
+    languages: ["Español", "Inglés"],
+    publications: [
+      "Segura-Rivera, R., Dcunha, N. J., Dimopoulos, Y. P., Mundhada, A., Sainz, T. P., Kettlun, C., ... & Vega, F. (2025). The spectrum of B-cell and plasma cell proliferations in nodal T follicular helper cell lymphomas. The American Journal of Surgical Pathology, 49(3), 251-264.",
+      "Segura-Rivera, R., & Pina-Oviedo, S. (2024). Marginal zone lymphoma of extranodal sites: A review with an emphasis on diagnostic pitfalls and differential diagnosis with reactive conditions. Human Pathology, 105683.",
+      "Wei, Q., Fang, H., Jing, J. M., Segura-Rivera, R., Medeiros, L. J., & Wang, W. (2024). Emergence of IGH::CCND1 rearrangement and mutations in TP53, BTK, and BCL2 associated with therapy resistance in chronic lymphocytic leukemia. EJHaem, 5(6), 1265-1268.",
+      "Fernández-Ferreira, R., Arroyave-Ramírez, A., Motola-Kuba, D., Alvarado-Luna, G., Mackinney-Novelo, I., & Segura-Rivera, R. (2021). Giant Benign Mammary Phyllodes Tumor: Report of a Case and Review of the Literature. Case reports in oncology, 14(1), 123-133.",
+      "Fernández-Ferreira, R., Alvarado-Luna, G., Motola-Kuba, D., Mackinney-Novelo, I., Cervera-Ceballos, E. E., & Segura-Rivera, R. (2020). Intergluteal Cleft Eccrine Porocarcinoma with Metastasis to Inguinal Region and Lung: Case Report and Review of the Literature. Case Reports in Oncology, 13(3), 1463-1473.",
+      "Segura-Rivera, R., Brindis-Zavaleta, M. & Ortiz-Hidalgo, C. (2020). Linfoma NK/T tipo nasal extraganglionar con expresión de CD20. Informe de un caso poco frecuente, que puede ser fuente de potencial error diagnóstico. Hematología, 21 (4): 247-252.",
+      "Segura-Rivera, R., & Ortiz-Hidalgo, C. (2020). Linfoma T angioinmunoblástico. Diagnóstico histológico e inmunohistoquímico del linfoma originado de células T foliculares cooperadoras. Patología, 58, 1-12.",
+      "Enríquez-Pineda, Ó. M., Segura-Rivera, J. R., Ruiz-Morales, J. M., Mendoza-Valdés, A., & Dorantes-Heredia, R. (2019). Asociación inusual de malacoplaquia y adenocarcinoma prostático. Revista Española de Patología."
     ]
   }
 ];

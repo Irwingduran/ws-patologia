@@ -17,9 +17,6 @@ import {
   GraduationCap,
   Briefcase,
   Award,
-  Mail,
-  Phone,
-  MapPin,
   Languages,
   Lightbulb,
   User,
@@ -143,7 +140,7 @@ export default function DoctorsSection() {
               </DialogHeader>
 
               <Tabs defaultValue="education" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 h-auto">
+                <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto">
                   <TabsTrigger value="education" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <GraduationCap className="w-4 h-4 mr-2" />
                     Educación
@@ -159,10 +156,6 @@ export default function DoctorsSection() {
                   <TabsTrigger value="publications" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
                     <BookOpen className="w-4 h-4 mr-2" />
                     Publicaciones
-                  </TabsTrigger>
-                  <TabsTrigger value="contact" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                    <Mail className="w-4 h-4 mr-2" />
-                    Contacto
                   </TabsTrigger>
                 </TabsList>
 
@@ -322,72 +315,6 @@ export default function DoctorsSection() {
                       </p>
                     )}
                   </div>
-                </TabsContent>
-
-                <TabsContent value="contact" className="space-y-4 mt-6">
-                  <h3 className="text-lg font-semibold text-slate-800 flex items-center gap-2" style={{ fontFamily: 'Dogma Bold, Arial, Helvetica, sans-serif' }}>
-                    <Mail className="w-5 h-5 text-blue-600" />
-                    Información de Contacto
-                  </h3>
-                  <Card className="border-blue-200">
-                    <CardContent className="pt-6 space-y-4">
-                      {selectedDoctor.contact.email && (
-                        <div className="flex items-start gap-3">
-                          <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Mail className="w-5 h-5 text-blue-600" />
-                          </div>
-                          <div>
-                            <p className="text-sm font-medium text-slate-700" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                              Correo Electrónico
-                            </p>
-                            <a
-                              href={`mailto:${selectedDoctor.contact.email}`}
-                              className="text-blue-600 hover:underline"
-                              style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}
-                            >
-                              {selectedDoctor.contact.email}
-                            </a>
-                          </div>
-                        </div>
-                      )}
-
-                      {selectedDoctor.contact.phone && (
-                        <div className="flex items-start gap-3">
-                          <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Phone className="w-5 h-5 text-green-600" />
-                          </div>
-                          <div>
-                            <p className="text-sm font-medium text-slate-700" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                              Teléfono
-                            </p>
-                            <a
-                              href={`tel:${selectedDoctor.contact.phone}`}
-                              className="text-blue-600 hover:underline"
-                              style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}
-                            >
-                              {selectedDoctor.contact.phone}
-                            </a>
-                          </div>
-                        </div>
-                      )}
-
-                      {selectedDoctor.contact.address && (
-                        <div className="flex items-start gap-3">
-                          <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <MapPin className="w-5 h-5 text-purple-600" />
-                          </div>
-                          <div>
-                            <p className="text-sm font-medium text-slate-700 mb-1" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                              Dirección
-                            </p>
-                            <p className="text-slate-600" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                              {selectedDoctor.contact.address}
-                            </p>
-                          </div>
-                        </div>
-                      )}
-                    </CardContent>
-                  </Card>
                 </TabsContent>
               </Tabs>
             </>
