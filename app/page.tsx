@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import {
   Phone,
-  Mail,
+  Mail, 
   MapPin,
   Clock,
   MessageCircle,
