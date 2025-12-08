@@ -317,9 +317,7 @@ export const doctors: Doctor[] = [
     ],
     certifications: [
       "Cédula de especialista: 12433213",
-      "Certificado COMMAP: 1908",
-      "RFC: SERJ910115EX3",
-      "CURP: SERJ910115HBCSGV02"
+      "Certificado COMMAP: 1908"
     ],
     languages: ["Español", "Inglés"],
     publications: [
