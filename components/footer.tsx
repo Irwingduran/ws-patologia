@@ -91,7 +91,7 @@ const Footer = () => {
               © {new Date().getFullYear()} Patología - Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#" className="text-slate-400 hover:text-white text-sm transition-colors">
+              <Link href="/aviso-de-privacidad" className="text-slate-400 hover:text-white text-sm transition-colors">
                 Privacidad
               </Link>
               <Link href="#" className="text-slate-400 hover:text-white text-sm transition-colors">
