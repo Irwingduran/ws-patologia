@@ -94,9 +94,6 @@ const Footer = () => {
               <Link href="/aviso-de-privacidad" className="text-slate-400 hover:text-white text-sm transition-colors">
                 Privacidad
               </Link>
-              <Link href="#" className="text-slate-400 hover:text-white text-sm transition-colors">
-                Términos
-              </Link>
             </div>
           </div>
         </div>
