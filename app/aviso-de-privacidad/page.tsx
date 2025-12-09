@@ -5,7 +5,7 @@ export default function AvisoDePrivacidadPage() {
   return (
     <div className="min-h-screen bg-slate-50">
       <Navbar />
-      <main className="container mx-auto max-w-4xl py-24 px-4">
+      <main className="container mx-auto max-w-4xl py-28 px-4">
         <h1 className="text-3xl font-bold text-slate-800 mb-8">Aviso de Privacidad</h1>
         <div className="prose prose-slate max-w-none bg-white p-8 rounded-xl shadow-sm text-slate-600 text-justify">
           <p className="mb-4">
@@ -22,13 +22,6 @@ export default function AvisoDePrivacidadPage() {
           <p className="mb-4">
             En caso de que no desee que sus datos personales se utilicen para estos fines secundarios, indíquelo a continuación:
           </p>
-          <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 mb-4">
-            <p className="font-medium mb-2">No consiento que mis datos personales se utilicen para los siguientes fines:</p>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 border border-slate-400 rounded bg-white"></div>
-              <span>Integración diagnóstica</span>
-            </div>
-          </div>
           <p className="mb-4">
             La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros.
           </p>
@@ -115,18 +108,11 @@ export default function AvisoDePrivacidadPage() {
           </p>
 
           <div className="mt-12 pt-8 border-t border-slate-200">
-            <div className="flex items-start gap-3 mb-8">
-              <div className="w-5 h-5 border border-slate-400 rounded bg-white mt-1 flex-shrink-0"></div>
-              <p>Consiento que mis datos personales sean tratados de conformidad con los términos y condiciones informados en el presente aviso de privacidad.</p>
-            </div>
-            
-            <div className="max-w-md">
-              <p className="mb-8">Nombre y firma:</p>
-              <div className="border-b border-slate-800 w-full h-8"></div>
-            </div>
+      
+    
           </div>
           
-          <p className="text-right text-sm text-slate-400 mt-8">1 de 1</p>
+        
         </div>
       </main>
       <Footer />
