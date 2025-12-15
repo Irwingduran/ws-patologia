@@ -28,6 +28,7 @@ export const doctors: Doctor[] = [
     title: "Médico Patólogo",
     position: "Director General",
     image: "/docs/Adrian.png",
+    specialties: ["Anatomía Patológica", "Inmunohistoquímica", "Hematopatología"],
     education: [
       {
         degree: "Postdoctorado en Hematopatología",
