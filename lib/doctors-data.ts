@@ -28,7 +28,7 @@ export const doctors: Doctor[] = [
     title: "Médico Patólogo",
     position: "Director General, Especialista en Anatomía Patológica, Alta especialidad en Hematopatología, Alta especialidad en Inmunohistoquímica",
     image: "/docs/Adrian.png",
-    specialties: [""],
+    specialties: [],
     education: [
       {
         degree: "Postdoctorado en Hematopatología",
@@ -109,7 +109,7 @@ export const doctors: Doctor[] = [
     title: "Médico Patólogo",
     position: "Especialista en Anatomía Patológica, Alta especialidad en Inmunohistoquímica",
     image: "/docs/Stephanie.png",
-    specialties: [""],
+    specialties: [],
     education: [
       {
         degree: "Alta Especialidad en Inmunohistoquímica en la Patología Quirúrgica",
@@ -155,7 +155,7 @@ export const doctors: Doctor[] = [
     title: "Médico Cirujano",
     position: "Especialista en Anatomía Patológica, Alta especialidad en Inmunohistoquímica, Alta especialidad en citopatología",
     image: "/docs/Ayami.png",
-    specialties: [""],
+    specialties: [],
     education: [
       {
         degree: "Curso de Alta Especialidad en Inmunohistoquímica de la Patología Quirúrgica",
@@ -208,7 +208,7 @@ export const doctors: Doctor[] = [
     title: "Médico Patólogo",
     position: "Especialista en Anatomía Patológica, Alta especialidad en Biología Molecular, Alta especialidad en Hematopatología, Alta especialidad en Inmunohistoquímica, Alta especialidad en citopatología",
     image: "/docs/Socrates.png",
-    specialties: [""],
+    specialties: [],
     education: [
       {
         degree: "Curso de Alta Especialidad en Hematopatología",
@@ -264,9 +264,9 @@ export const doctors: Doctor[] = [
     id: "jesus-segura",
     name: "Dr. Jesús Román Segura Rivera",
     title: "Médico Anatomopatólogo",
-    position: "Alta especialidad en Hematopatología",
+    position: "Especialista en Anatomía Patológica, Alta especialidad en Hematopatología",
     image: "/docs/roman.png",
-    specialties: ["Anatomía Patológica", "Hematopatología"],
+    specialties: [],
     education: [
       {
         degree: "Fellowship posdoctoral de investigación, Hematopatología",
