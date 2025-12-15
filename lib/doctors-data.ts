@@ -28,6 +28,7 @@ export const doctors: Doctor[] = [
     title: "Médico Patólogo",
     position: "Director General, Especialista en Anatomía Patológica, Alta especialidad en Hematopatología, Alta especialidad en Inmunohistoquímica",
     image: "/docs/Adrian.png",
+    specialties: [""],
     education: [
       {
         degree: "Postdoctorado en Hematopatología",
@@ -106,9 +107,9 @@ export const doctors: Doctor[] = [
     id: "stephanie-escobar",
     name: "Dra. Stephanie Escobar Muñoz",
     title: "Médico Patólogo",
-    position: "Especialista en Anatomía Patológica e Inmunohistoquímica",
+    position: "Especialista en Anatomía Patológica, Alta especialidad en Inmunohistoquímica",
     image: "/docs/Stephanie.png",
-    specialties: ["Anatomía Patológica", "Inmunohistoquímica", "Citopatología"],
+    specialties: [""],
     education: [
       {
         degree: "Alta Especialidad en Inmunohistoquímica en la Patología Quirúrgica",
@@ -152,13 +153,9 @@ export const doctors: Doctor[] = [
     id: "ayami-ogata",
     name: "Dra. Ayami Ogata Medel",
     title: "Médico Cirujano",
-    position: "Patólogo adscrito al Laboratorio PIC",
+    position: "Especialista en Anatomía Patológica, Alta especialidad en Inmunohistoquímica, Alta especialidad en citopatología",
     image: "/docs/Ayami.png",
-    specialties: [
-      "Anatomía Patológica",
-      "Inmunohistoquímica",
-      "Citopatología"
-    ],
+    specialties: [""],
     education: [
       {
         degree: "Curso de Alta Especialidad en Inmunohistoquímica de la Patología Quirúrgica",
@@ -209,14 +206,9 @@ export const doctors: Doctor[] = [
     id: "socrates-garcia",
     name: "Dr. Sócrates García Gutiérrez",
     title: "Médico Patólogo",
-    position: "Especialista en en Anatomía Patológica, Hematopatología, Inmunohistoquímica, citopatología y Biología molecular",
+    position: "Especialista en Anatomía Patológica, Alta especialidad en Biología Molecular, Alta especialidad en Hematopatología, Alta especialidad en Inmunohistoquímica, Alta especialidad en citopatología",
     image: "/docs/Socrates.png",
-    specialties: [
-      "Hematopatología",
-      "Anatomía Patológica",
-      "Citopatología",
-      "Inmunohistoquímica"
-    ],
+    specialties: [""],
     education: [
       {
         degree: "Curso de Alta Especialidad en Hematopatología",
