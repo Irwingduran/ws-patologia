@@ -108,7 +108,7 @@ export default function PathologyWebsite() {
     </div>
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <Link href="/catalogo/CatalogoBM.pdf" target="_blank" className="cursor-pointer h-full">
+      <Link href="/catalogo/CatalogoIHQ.pdf" target="_blank" className="cursor-pointer h-full">
         <Card className="hover:shadow-lg transition-shadow border-blue-100 h-full flex flex-col">
           <CardHeader>
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
