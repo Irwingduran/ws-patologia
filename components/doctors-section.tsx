@@ -73,30 +73,31 @@ export default function DoctorsSection() {
                   </p>
                 </CardHeader>
                 <CardContent className="text-center flex flex-col flex-grow">
-                  <div className="flex flex-wrap gap-2 justify-center mb-4 min-h-[3rem] items-start">
-                    {doctor.specialties.slice(0, 2).map((specialty, index) => (
-                      <Badge
-                        key={index}
-                        variant="secondary"
-                        className="text-xs"
-                        style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}
-                      >
-                        {specialty}
-                      </Badge>
-                    ))}
-                    {doctor.specialties.length > 2 && (
-                      <Badge variant="secondary" className="text-xs" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
-                        +{doctor.specialties.length - 2}
-                      </Badge>
-                    )}
-                  </div>
+                  {doctor.specialties.length > 0 && (
+                    <div className="flex flex-wrap gap-2 justify-center mb-4 min-h-[3rem] items-start">
+                      {doctor.specialties.slice(0, 2).map((specialty, index) => (
+                        <Badge
+                          key={index}
+                          variant="secondary"
+                          className="text-xs"
+                          style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}
+                        >
+                          {specialty}
+                        </Badge>
+                      ))}
+                      {doctor.specialties.length > 2 && (
+                        <Badge variant="secondary" className="text-xs" style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}>
+                          +{doctor.specialties.length - 2}
+                        </Badge>
+                      )}
+                    </div>
+                  )}
                   <Button
                     variant="outline"
-                    className="w-full border-blue-200 text-blue-700 hover:bg-blue-50 mt-4"
+                    className="w-full border-blue-200 text-blue-700 hover:bg-blue-50 mt-auto"
                     size="sm"
                     style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}
                   >
-                    <User className="w-4 h-4 mr-2" />
                     Ver Perfil Completo
                   </Button>
                 </CardContent>
