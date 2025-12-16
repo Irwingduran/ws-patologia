@@ -92,7 +92,7 @@ export default function DoctorsSection() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full border-blue-200 text-blue-700 hover:bg-blue-50 mt-auto"
+                    className="w-full border-blue-200 text-blue-700 hover:bg-blue-50 mt-4"
                     size="sm"
                     style={{ fontFamily: 'Source Sans Pro Bold, Arial, Helvetica, sans-serif' }}
                   >
