@@ -375,7 +375,7 @@ export default function PathologyWebsite() {
           <div className="text-center mb-12">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Testimonios</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Opiniones de Nuestros Clientes</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Lo que nuestros clientes dicen sobre nuestros servicios</p>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Opiniones de clientes sobre nuestros servicios</p>
           </div>
 
           <div className="relative">
