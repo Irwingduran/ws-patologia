@@ -443,7 +443,7 @@ export default function PathologyWebsite() {
               <Link href="https://maps.app.goo.gl/DJt4K1Y7iPBAGwe4A" target="_blank">
                 <Button variant="outline" className="border-blue-300 text-blue-600 hover:bg-blue-50">
                   <Star className="mr-2 h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  Ver más opiniones en Google
+                  Déjanos una opinión en Google
                 </Button>
               </Link>
             </div>
