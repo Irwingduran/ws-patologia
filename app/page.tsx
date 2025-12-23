@@ -319,7 +319,7 @@ export default function PathologyWebsite() {
           <div className="text-center mb-12">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Ubicación</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Nuestra Ubicación</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Visítanos en nuestra sede principal en Polanco, Ciudad de México</p>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Visítanos en nuestra sucursal en Polanco, Ciudad de México</p>
           </div>
 
           <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg p-6">
@@ -375,7 +375,7 @@ export default function PathologyWebsite() {
           <div className="text-center mb-12">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Testimonios</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Opiniones de Nuestros Clientes</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Lo que dicen los profesionales de la salud sobre nuestros servicios</p>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Lo que nuestros clientes dicen sobre nuestros servicios</p>
           </div>
 
           <div className="relative">
