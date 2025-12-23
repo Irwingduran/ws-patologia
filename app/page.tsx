@@ -30,10 +30,8 @@ import WhyChooseUs from "@/components/why-choose-us"
 import { useState, useEffect } from "react"
 
 export default function PathologyWebsite() {
-  // Estado para el carrusel de reviews
   const [currentReview, setCurrentReview] = useState(0)
 
-  // Datos de las reviews (simuladas - deberías reemplazar con datos reales de Google Business)
   const googleReviews = [
     {
       id: 1,
@@ -85,17 +83,14 @@ export default function PathologyWebsite() {
     },
   ]
 
-  // Función para cambiar al siguiente review
   const nextReview = () => {
     setCurrentReview((prev) => (prev === googleReviews.length - 1 ? 0 : prev + 1))
   }
 
-  // Función para cambiar al review anterior
   const prevReview = () => {
     setCurrentReview((prev) => (prev === 0 ? googleReviews.length - 1 : prev - 1))
   }
 
-  // Auto-rotación del carrusel
   useEffect(() => {
     const interval = setInterval(() => {
       nextReview()
@@ -103,7 +98,6 @@ export default function PathologyWebsite() {
     return () => clearInterval(interval)
   }, [currentReview])
 
-  // Función para renderizar estrellas
   const renderStars = (rating: number) => {
     return Array(5)
       .fill(0)
@@ -117,16 +111,10 @@ export default function PathologyWebsite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50" style={{ fontFamily: "Source Sans Pro Bold, Arial, Helvetica, sans-serif" }}>
-      {/* Header */}
       <Navbar />
-
-      {/* Hero Section */}
       <Hero />
-
-      {/* Why Choose Us Section */}
       <WhyChooseUs />
 
-      {/* About Section */}
       <section id="conocenos" className="py-16 px-4 bg-white relative">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -140,7 +128,6 @@ export default function PathologyWebsite() {
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">Más de dos décadas de excelencia en diagnóstico patológico especializado</p>
           </div>
 
-          {/* Video de Presentación */}
           <div className="mb-16">
             <div className="max-w-4xl mx-auto">
               <VimeoPlayer videoId="1124298307" title="Presentación PIC Patología" />
@@ -175,10 +162,8 @@ export default function PathologyWebsite() {
         </div>
       </section>
 
-      {/* Doctors Section */}
       <DoctorsSection />
 
-      {/* Services Section */}
       <section id="servicios" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -312,13 +297,12 @@ export default function PathologyWebsite() {
         </div>
       </section>
 
-      {/* Google Maps Section */}
       <section id="ubicacion" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 mb-4">Ubicación</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Nuestra Ubicación</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Visítanos en nuestra sede principal en Polanco, Ciudad de México</p>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Visítanos en nuestra sede principal en Polanco</p>
           </div>
 
           <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg p-6">
@@ -332,7 +316,6 @@ export default function PathologyWebsite() {
                       <p className="font-semibold text-slate-700">Dirección:</p>
                       <p className="text-slate-600">Tennyson 360, Colonia Polanco</p>
                       <p className="text-slate-600">Del. Miguel Hidalgo, CP 11550</p>
-                      <p className="text-slate-600">Ciudad de México</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -368,7 +351,6 @@ export default function PathologyWebsite() {
         </div>
       </section>
 
-      {/* Google Reviews Section */}
       <section id="testimonios" className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -378,10 +360,8 @@ export default function PathologyWebsite() {
           </div>
 
           <div className="relative">
-            {/* Carrusel de Reviews */}
             <div className="overflow-hidden rounded-2xl bg-white shadow-xl">
               <div className="relative h-[400px] flex items-center justify-center p-8">
-                {/* Review actual */}
                 <div key={googleReviews[currentReview].id} className="text-center max-w-3xl mx-auto animate-fadeIn">
                   <div className="mb-6">
                     <div className="flex justify-center mb-4">
@@ -407,7 +387,6 @@ export default function PathologyWebsite() {
                   </div>
                 </div>
 
-                {/* Controles del carrusel */}
                 <button
                   onClick={prevReview}
                   className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors z-10"
@@ -424,7 +403,6 @@ export default function PathologyWebsite() {
                 </button>
               </div>
 
-              {/* Indicadores */}
               <div className="flex justify-center gap-2 pb-8">
                 {googleReviews.map((_, index) => (
                   <button
@@ -437,7 +415,6 @@ export default function PathologyWebsite() {
               </div>
             </div>
 
-            {/* Enlace a Google Reviews */}
             <div className="text-center mt-8">
               <Link href="https://maps.app.goo.gl/DJt4K1Y7iPBAGwe4A" target="_blank">
                 <Button variant="outline" className="border-blue-300 text-blue-600 hover:bg-blue-50">
@@ -450,7 +427,6 @@ export default function PathologyWebsite() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contacto" className="py-16 px-4 bg-gradient-to-br from-slate-800 to-blue-900 text-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -514,6 +490,14 @@ export default function PathologyWebsite() {
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6" />
                   </div>
+                  <div style={{ fontFamily: "Source Sans Pro Bold, Arial, Helvetica, sans-serif" }}>
+                    <h3 className="font-semibold text-lg mb-2">Dirección</h3>
+                    <p className="text-blue-100">
+                      Tennyson 360, Colonia Polanco
+                      <br />
+                      Del. Miguel Hidalgo, CP 11550
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -570,4 +554,3 @@ export default function PathologyWebsite() {
     </div>
   )
 }
-```
