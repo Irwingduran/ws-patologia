@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build"
   },
   "dependencies": {
     "@anthropic-ai/claude-code": "^2.0.5",
